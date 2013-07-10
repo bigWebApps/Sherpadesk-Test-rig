@@ -1,0 +1,8 @@
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\bin\SherpaDeskTestRig.dll
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\bin\SherpaDeskTestRig.pdb
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\bin\SherpaDeskTestRig.xml
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\obj\Debug\SherpaDeskTestRig.Resources.resources
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\obj\Debug\SherpaDeskTestRig.vbproj.GenerateResource.Cache
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\obj\Debug\SherpaDeskTestRig.dll
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\obj\Debug\SherpaDeskTestRig.xml
+C:\Users\Ben\GitRepos\Sherpadesk-Test-rig\SherpaDeskTestRig\obj\Debug\SherpaDeskTestRig.pdb
