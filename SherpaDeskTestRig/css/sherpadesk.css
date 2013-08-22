@@ -1,21 +1,34 @@
 /* CSS Document */
 
-/* Temp - remove for production */
-.show-grid {
-margin-top: 10px;
-margin-bottom: 20px;
+/*-------------------------------*/
+/*      Global Styles            */
+/*-------------------------------*/
+
+body
+{
+    min-width: 900px;
+}
+ul, li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a:hover
+{
+    text-decoration: none;
 }
 
 
-.show-grid [class*="span"] {
-	background-color: #eee;
-	text-align: center;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	min-height: 40px;
-	line-height: 40px; 
-}
+
+/*-------------------------------*/
+/*       Master Header           */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/*           Header              */
+/*-------------------------------*/
 
 
 header {
@@ -36,6 +49,98 @@ header .header {
     padding: 0;
     color: #FFFFFF;
 	}
+    header .header a
+    {
+        color: #ffffff;
+    }    
+    header .header ul li
+    {
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+    }
+    header .header .header-left
+    {
+        padding: 0;
+        border-left: 1px solid #245d89;
+    }
+    header .header .header-left ul li
+    {
+        float: left;
+        padding: 0;
+        border-left: 1px solid #245d89;
+    }
+        header .header .header-left ul li.header-mtn:hover
+        {
+            background-color: #276da3;
+        }
+        header .header .header-left ul li.header-title
+        {
+            font-size: 21px;
+            padding-left: 10px;
+        }
+    header .header .header-right
+    {
+        float: right;
+    }
+    header .header .header-right ul li
+    {
+        padding: 0 10px;
+        border-right: 1px solid #245d89;
+    }
+        header .header .header-right li.profile img
+        {
+            padding: 2px;
+            background-color: #ffffff;
+        }
+        header .header .header-right li.profile img,
+        header .header .header-right li.add-item img
+        {
+            margin-right: 10px;
+        }
+        header .header .header-right ul li:first-child
+        {
+            border-left: 1px solid #245d89;
+        }
+
+        /*------------- Bootstrap Overrides --------------*/
+        .nav > li > a:hover, .nav > li > a:focus {
+            background-color: transparent;
+            }
+        header .header ul.nav li.dropdown:hover
+            {
+                background: #276da3;
+            }
+
+header .header ul.nav li.dropdown ul.dropdown-menu
+{
+    background-color:#3399ff;
+}
+    header .header ul.nav li.dropdown ul.dropdown-menu li
+    {
+        border: none;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        height: auto;
+        display: block;
+        vertical-align: middle;
+    }
+    header .header ul.nav li.dropdown ul.dropdown-menu li a
+    {
+        padding: 10px;
+    }
+        header .header ul.nav li.dropdown ul.dropdown-menu li a:hover
+        {
+            background: #09a0e1;
+        }
+
+
+/*-------------------------------*/
+/*         Sub-Header            */
+/*-------------------------------*/
+
 header .sub-header {
 	background: none repeat scroll 0 0 #F1F1F1;
 	border-bottom: 1px solid #E5E5E5;
@@ -43,6 +148,53 @@ header .sub-header {
 	min-height: 35px;
 	height: auto;
 	margin: 0;
-	overflow: hidden;
-	padding: 0 5% 0 5%;
+	padding: 0;
 	}
+
+header .sub-header ul li
+    {
+        display: inline-block;
+    }
+header .sub-header ul li a
+    {
+        color: #333333;
+        padding: 5px 8px;
+        margin: 0 5px 0 0;
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 14px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px 4px 4px 4px;
+        border: 1px solid transparent;
+        line-height:35px;
+    }
+header .sub-header ul li a:hover,
+header .sub-header ul li.active a
+    {
+        background-color: #e5e5e5;
+        color: #222222;
+        border: 1px solid #dcdcdc;
+    }
+
+/*-------------------------------*/
+/* Temp - remove for production  */
+/*-------------------------------*/
+.show-grid {
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+
+.show-grid [class*="span"] {
+	background-color: #eee;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	min-height: 40px;
+	line-height: 40px; 
+}
+/*-------------------------------*/
+/* Temp - remove for production  */
+/*-------------------------------*/
