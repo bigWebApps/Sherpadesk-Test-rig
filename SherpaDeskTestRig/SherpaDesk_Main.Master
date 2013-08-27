@@ -59,14 +59,16 @@
                 </div>
   	        </div>
             <div class="sub-header">
-                <div class="container-fluid">
+                <div class="container-fluid">                    
                     <div class="row-fluid">
                         <div class="span12">
+                            <p class="mobile-nav">Menu</p>
                             <ul>
                                 <li><a href="#cssgrid">CSS Layout Grids</a></li>
                                 <li><a href="#buttons">Buttons</a></li>
                                 <li><a href="#components">Components</a></li>
-                                <li><a href="#tables">Table Grids</a></li>                                
+                                <li><a href="#tables">Table Grids</a></li>  
+                                <li><a href="#">Dashboard</a></li>                              
                             </ul>
                         </div>
                     </div>
@@ -87,9 +89,11 @@
             </asp:ContentPlaceHolder>
         </div>
     </footer>
+
     <!-- Scripts  -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </form>
 </body>
 </html>
