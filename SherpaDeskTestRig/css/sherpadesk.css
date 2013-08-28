@@ -27,6 +27,11 @@ a:hover
     text-decoration: none;
 }
 
+section
+{
+    margin-bottom: 50px;
+}
+
 
 
 /*-------------------------------*/

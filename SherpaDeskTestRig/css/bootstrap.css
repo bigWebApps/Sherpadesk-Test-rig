@@ -1971,15 +1971,23 @@ table {
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
 }
 
 .table th {
   font-weight: bold;
+  color:#ffffff;
+  border-top: 1px solid #60a3d7;
+  border-bottom: 1px solid #14619d;
+  background-color: #2e7dba;
 }
 
 .table thead th {
   vertical-align: bottom;
+}
+
+.table tbody tr:hover
+{
+    background-color: #f2fff3 !important;
 }
 
 .table caption + thead tr:first-child th,

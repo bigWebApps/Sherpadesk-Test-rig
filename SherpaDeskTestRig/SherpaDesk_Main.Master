@@ -75,13 +75,13 @@
                 </div>
             </div>
         </header>
-        <section>
-            <div class="container-fluid">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        <div class="container-fluid">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-                </asp:ContentPlaceHolder>
-            </div>
-        </section>
+            </asp:ContentPlaceHolder>
+        </div>
+
     <footer>
         <div class="container-fluid">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
