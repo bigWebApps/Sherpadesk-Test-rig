@@ -241,7 +241,7 @@ line-height: 25px;
 /*         Mobile view           */
 /*-------------------------------*/
 
-@media (max-width: 480px)
+@media (max-width: 768px)
 {
     p.mobile-nav
     {

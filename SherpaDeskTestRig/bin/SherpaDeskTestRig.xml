@@ -6,7 +6,39 @@ SherpaDeskTestRig
 </name>
 </assembly>
 <members>
-<member name="P:SherpaDeskTestRig.My.MyWebExtension.Computer">
+<member name="F:SherpaDeskTestRig.Portal.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SherpaDeskTestRig.Portal.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SherpaDeskTestRig.Portal.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SherpaDeskTestRig.Portal.ContentPlaceHolder2">
+	<summary>
+ContentPlaceHolder2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Computer">
 	<summary>
  Returns information about the host computer.
  </summary>

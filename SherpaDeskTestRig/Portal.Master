@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Portal.master.vb" Inherits="SherpaDeskTestRig.Portal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/sherpadesk.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="sd_portal">
+    <form id="form1" runat="server">
+        <header>
+  	        <div class="header">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="header-left">
+		                    <ul>
+			                    <li class="header-title"><a title="SherpaDesk" href="/home/">Some Company Name</a></li>
+		                    </ul>
+                        </div>
+    	            
+                        <div class="header-right">
+		                    <ul class="nav">
+                                 <li>Login</li>
+		                    </ul>
+                        </div>
+    	            </div>
+                </div>
+  	        </div>
+        </header>
+    <div  class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </footer>
+
+    <!-- Scripts  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </form>
+</body>
+</html>

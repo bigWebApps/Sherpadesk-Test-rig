@@ -68,7 +68,8 @@
                                 <li><a href="#buttons">Buttons</a></li>
                                 <li><a href="#components">Components</a></li>
                                 <li><a href="#tables">Table Grids</a></li>  
-                                <li><a href="#">Dashboard</a></li>                              
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Portal</a></li>                              
                             </ul>
                         </div>
                     </div>

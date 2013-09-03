@@ -94,6 +94,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
+    <Content Include="portal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +124,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="portal.aspx.designer.vb">
+      <DependentUpon>portal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal.aspx.vb">
+      <DependentUpon>portal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Portal.Master.designer.vb">
+      <DependentUpon>Portal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portal.Master.vb">
+      <DependentUpon>Portal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="SherpaDesk_Main.Master.designer.vb">
       <DependentUpon>SherpaDesk_Main.Master</DependentUpon>
     </Compile>
@@ -150,6 +165,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="SherpaDesk_Main.Master" />
+    <Content Include="Portal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
