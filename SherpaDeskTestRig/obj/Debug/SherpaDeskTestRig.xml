@@ -6,7 +6,32 @@ SherpaDeskTestRig
 </name>
 </assembly>
 <members>
-<member name="F:SherpaDeskTestRig.Portal.head">
+<member name="P:SherpaDeskTestRig.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:SherpaDeskTestRig.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:SherpaDeskTestRig.Portal.head">
 	<summary>
 head control.
 </summary>
@@ -38,31 +63,6 @@ ContentPlaceHolder2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:SherpaDeskTestRig.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:SherpaDeskTestRig.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
 </member><member name="F:SherpaDeskTestRig.SherpaDesk_Main.head">
 	<summary>
 head control.
