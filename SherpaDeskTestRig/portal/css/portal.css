@@ -176,6 +176,10 @@ section
 {
     
 }
+    .sd_portal .sidebar h4
+    {
+        margin-top: 0;
+    }
     .sd_portal a
     {
         color: #004174;
@@ -212,8 +216,33 @@ section
     {
         margin-bottom: 10px;
         padding-left: 10px;
-    } 
+    }
 
+.sd_portal .no-kb
+{
+    width: 50%;
+    margin: 10% auto 0;
+}
+
+    .sd_portal .no-kb ul li
+    {
+        margin-bottom: 20px;
+    }
+
+    .sd_portal .no-kb .btn-success
+    {
+        font-size: 24px;
+    }
+    .sd_portal .no-kb .btn-primary
+    {
+        background-color: #004174;
+        border-color: #004e8b;
+    }
+        .sd_portal .no-kb .btn-primary:hover
+        {
+            background-color: #004e8b;
+            border-color: #004e8b;
+        }
 
 /*-------------------------------*/
 /*         Mobile view           */
@@ -230,4 +259,9 @@ section
             font-weight: bold;
             font-size: 18px !important;
         }
+  .sd_portal .no-kb
+{
+    width: 90%;
+    margin: 0 auto 40px;
+}
 }
