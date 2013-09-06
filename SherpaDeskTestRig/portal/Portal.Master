@@ -21,13 +21,14 @@
                         <div class="col-lg-12">
                             <div class="header-left">
 		                        <ul>
-			                        <li class="header-title"><a title="SherpaDesk" href="/">Some Company Name</a></li>
+			                        <li class="header-title"><a title="SherpaDesk" href="portal.aspx">Some Company Name</a></li>
 		                        </ul>
                             </div>
     	            
                             <div class="header-right">
 		                        <ul>
-                                     <li><a href="#">Login</a></li>
+                                    <!-- For Mock Up Only --><li><a href="portal-no-kb.aspx">Portal No KB</a>&nbsp;&nbsp;&nbsp;&nbsp;</li> 
+                                    <li><a href="#">Login</a></li>
 		                        </ul>
                             </div>
 

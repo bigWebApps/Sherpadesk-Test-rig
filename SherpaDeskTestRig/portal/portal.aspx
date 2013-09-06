@@ -27,12 +27,14 @@
             <!-- Start Right Side -->
             <div class="col-md-3">
                 <div class="row sidebar">
+                    <section>
                         <div class="col-lg-12 sidebar-actions">
                             <ul>
                                 <li><button class="btn btn-block btn-success">Submit a Ticket</button></li>
                                 <li><button class="btn btn-sm btn-block">Check Existing Ticket</button></li>
                             </ul>
                         </div>
+                    </section>
                 </div>
             </div><!-- End Right Side -->
         </div><!-- End Top Section -->
@@ -45,11 +47,11 @@
                     <div class="col-lg-12 full-col">
                         <a class="title" href="#"><h4>Full Size Category Title</h4></a>
                         <ul>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="question"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
                             <li class="more"><a href="#">More...</a></li>
                         </ul>
                     </div>
@@ -58,22 +60,35 @@
                     <div class="col-lg-6 half-col">
                         <a class="title" href="#"><h4>Half Size Category Title</h4></a>
                         <ul>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="question"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
                             <li class="more"><a href="#">More...</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 half-col">
                         <a class="title" href="#"><h4>Half Size Category Title</h4></a>
                         <ul>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title</a></li>
-                            <li class="question"><a href="#">This is an article with supoer really really really long title</a></li>
-                            <li class="question"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="article"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
-                            <li class="question"><a href="#">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="more"><a href="#">More...</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row articles">                    
+                    <div class="col-lg-6 half-col">
+                        <a class="title" href="#"><h4>Half Size Category Title</h4></a>
+                        <ul>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="article"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
+                            <li class="question"><a href="article.aspx">This is an article with supoer really really really long title This is an article with supoer really really really long title</a></li>
                             <li class="more"><a href="#">More...</a></li>
                         </ul>
                     </div>

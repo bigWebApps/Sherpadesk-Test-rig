@@ -94,6 +94,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\main.js" />
+    <Content Include="portal\article.aspx" />
     <Content Include="portal\css\bootstrap.css" />
     <Content Include="portal\css\portal.css" />
     <Content Include="portal\fonts\glyphicons-halflings-regular.svg" />
@@ -133,6 +134,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="portal\article.aspx.designer.vb">
+      <DependentUpon>article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\article.aspx.vb">
+      <DependentUpon>article.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="portal\portal-no-kb.aspx.designer.vb">
       <DependentUpon>portal-no-kb.aspx</DependentUpon>

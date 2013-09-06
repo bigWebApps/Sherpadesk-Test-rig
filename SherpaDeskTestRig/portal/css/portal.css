@@ -27,7 +27,10 @@ section
     {
         margin-bottom: 30px;
     }
-
+        section.top-section .sidebar section
+        {
+            margin-bottom: 0;
+        }
 
 
 /*-------------------------------*/
@@ -94,7 +97,7 @@ section
 
 .sd_portal .top-search
 {
-    margin-bottom: 30px;
+    
 }
 .sd_portal .support-search
 {
@@ -131,6 +134,9 @@ section
         border-width: 2px;
     }
 
+/*-------------------------------*/
+/*           Articles            */
+/*-------------------------------*/
 
 .sd_portal .articles
 {
@@ -166,11 +172,39 @@ section
     }
 
 .sd_portal .articles,
+.sd_portal .article,
 .sd_portal .articles a h4,
 .sd_portal .sidebar
 {
     color: #222222;
 }
+
+/*-------------------------------*/
+/*        Single Article         */
+/*-------------------------------*/
+
+.sd_portal div.article
+{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.sd_portal .article h1.title
+{
+    margin-top: 0;
+}
+.sd_portal .article a.btn-primary
+{
+    color: #ffffff;
+    margin: 20px 0;
+}
+    .sd_portal .article a.btn-primary:hover
+    {
+        text-decoration: none;
+    }
+
+/*-------------------------------*/
+/*         Sidebar all           */
+/*-------------------------------*/
 
 .sd_portal .sidebar
 {
@@ -217,6 +251,10 @@ section
         margin-bottom: 10px;
         padding-left: 10px;
     }
+
+/*-------------------------------*/
+/*         No KB Section         */
+/*-------------------------------*/
 
 .sd_portal .no-kb
 {
