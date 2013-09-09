@@ -10,7 +10,7 @@
                 <div class="no-kb">
                     <ul>
                         <li><button class="btn btn-lg btn-block btn-success">Submit a Ticket</button></li>
-                        <li><button class="btn btn-lg btn-block btn-primary">Check Existing Ticket</button></li>
+                        <li><button class="btn btn-lg btn-block">Check Existing Ticket</button></li>
                     </ul>
                 </div>
             </div><!-- End Left Side --> 
