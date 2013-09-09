@@ -17,12 +17,65 @@
                     <a href="portal.aspx" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Back to Home</a>
                 </div>
 
-                <!-- Comments Section -->
-                <div class="comments">
-                 Add Existing comments and form here...
-                </div><!-- End Comments -->
-                
+                <div class="articles-responses">
+                    <!-- Comments Section -->
+                    <div class="comments">
+                        <div class="comments_wrap">
+	                    <ol class="commentlist">                
+                            <li>
+                            
+	                            <div class="gravatar withvoting">
+		                            <div class="votes">		
+                                        <img src="img/vt-arrow-up.png" />
+                                        <h2>0</h2>
+                                        <img src="img/vt-arrow-down.png" />    
+	                                </div>
+                                    <span><img src="img/tech-icon.png" /></span>
+                                    <img class="avatar technician" src="https://secure.gravatar.com/avatar/e0fdf12c9e29653d9c0b73a25f224850?s=40&amp;d=https%3a%2f%2fsupport.sherpadesk.com%3a443%2fimages%2fdefaultGravatar.png&amp;r=g" />
+    
+	                            </div>
+	                            <div class="comment-content withvoting">
+		
+                                    <span class="name">
+		                                <a class="url url" rel="external nofollow" href="#response">Mike  Clements</a>
+                                    </span>
+		                            <div class="user-meta">
+		                                <span>29 August, 2013</span>
+	                                </div>
+		                            <div class="comment-entry">
+		                                <p>This is a comment WITH voting,<br />
+                                            You can co to your Configuration section and then down to Logins.  This will show you all your Techs and Admins.  You will need to select the Tech you want to downgrade and make them a Standard User.<br />
+                                            Sent from my iPhone</p>	             					                
+                                    </div>   
+	                            </div>
+                            </li>
+                            <li>
+                            
+	                            <div class="gravatar">		                            
+                                    <span><img src="img/tech-icon.png" /></span>
+                                    <img class="avatar technician" src="https://secure.gravatar.com/avatar/e0fdf12c9e29653d9c0b73a25f224850?s=40&amp;d=https%3a%2f%2fsupport.sherpadesk.com%3a443%2fimages%2fdefaultGravatar.png&amp;r=g" />
+    
+	                            </div>
+	                            <div class="comment-content">
+		
+                                    <span class="name">
+		                                <a class="url url" rel="external nofollow" href="#response">Mike  Clements</a>
+                                    </span>
+		                            <div class="user-meta">
+		                                <span>29 August, 2013</span>
+	                                </div>
+		                            <div class="comment-entry">
+		                                <p>This is a comment withOUT voting,<br />
+                                            You can co to your Configuration section and then down to Logins.  This will show you all your Techs and Admins.  You will need to select the Tech you want to downgrade and make them a Standard User.<br />
+                                            Sent from my iPhone</p>	             					                
+                                    </div>   
+	                            </div>
+                            </li>                 
+                        </ol>
+	                    </div>
+                    </div><!-- End Comments -->
 
+                </div>
             </div>
 
             <!-- Start Right Side -->

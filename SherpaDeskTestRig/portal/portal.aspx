@@ -14,7 +14,7 @@
                 <div class="row top-search">
                     <div class="col-lg-12">
                     <div class="support-search">
-                        <button class="btn btn-success">Search</button>
+                        <button class="btn btn-primary">Search</button>
                         <div class="search-outer">
                             <input type="text" class="portalSearch" name="portalSearch" placeholder="Search Knowledgebase" />
                         </div>                        
