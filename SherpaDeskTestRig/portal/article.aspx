@@ -9,21 +9,29 @@
             <div class="col-md-9">
 
                 <!-- Top Article section -->
-                <div class="article">
-                    <h1 class="title">How do I change the number of technicians from 2 to 1?</h1>
-                    <p>Across the sea of space, the stars are other suns. The regret on our side is, they used to say years ago, we are reading about you in science class.</p>
-                    <p>Now they say, we are reading about you in history class. Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development. As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest. For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                <div class="row">
+                    <div class="col-lg-12 article">
+                        <h1 class="title">How do I change the number of technicians from 2 to 1?</h1>
+                        <p>Across the sea of space, the stars are other suns. The regret on our side is, they used to say years ago, we are reading about you in science class.</p>
+                        <p>Now they say, we are reading about you in history class. Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development. As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest. For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
                     
-                    <a href="portal.aspx" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Back to Home</a>
+                        <a href="portal.aspx" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Back to Home</a>
+                    </div>
                 </div>
 
-                <div class="articles-responses">
-                    <!-- Comments Section -->
-                    <div class="comments">
+                <!-- Thumbs up | social suff -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        Add social stuff here...
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="row articles-responses">                    
+                    <div class="col-lg-12 comments">
                         <div class="comments_wrap">
 	                    <ol class="commentlist">                
-                            <li>
-                            
+                            <li>                            
 	                            <div class="gravatar withvoting">
 		                            <div class="votes">		
                                         <img src="img/vt-arrow-up.png" />

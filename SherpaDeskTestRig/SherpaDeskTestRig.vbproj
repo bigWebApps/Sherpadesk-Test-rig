@@ -81,7 +81,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap-responsive-old.css" />
+    <Content Include="css\bootstrap-old.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\sherpadesk.css" />
     <Content Include="default.aspx" />

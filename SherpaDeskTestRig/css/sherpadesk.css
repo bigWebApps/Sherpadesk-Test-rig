@@ -4,12 +4,7 @@
 /*      Global Styles            */
 /*-------------------------------*/
 
-*
-{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
-}
+
 
 
 body
@@ -31,7 +26,38 @@ section
 {
     margin-bottom: 50px;
 }
+/*-------------------------------*/
+/* Temp - remove for production  */
+/*-------------------------------*/
+.show-grid {
+    margin-top: 10px;
+    margin-bottom: 20px;
+	background-color: #eee;
+	text-align: center;
+	min-height: 40px;
+	line-height: 40px; 
+}
 
+.show-grid-blue
+{
+    text-align: center;
+    background-color: #0066ff !important;
+    color: #ffffff;
+    min-height: 40px;
+	line-height: 40px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.the-icons li {
+float: left;
+width: 25%;
+line-height: 25px;
+}
+
+/*-------------------------------*/
+/* Temp - remove for production  */
+/*-------------------------------*/
 
 
 /*-------------------------------*/
@@ -61,6 +87,10 @@ header .header {
     padding: 0;
     color: #FFFFFF;
 	}
+    header .header .nav > li > a
+    {
+        padding: 0;
+    }
     header .header a
     {
         color: #ffffff;
@@ -71,7 +101,7 @@ header .header {
         line-height: 50px;
         display: inline-block;
     }
-    header .header .header-left
+    header .header .header-left ul
     {
         padding: 0;
         border-left: 1px solid #245d89;
@@ -91,7 +121,7 @@ header .header {
             font-size: 21px;
             padding-left: 10px;
         }
-    header .header .header-right
+    header .header .header-right ul
     {
         float: right;
     }
@@ -199,41 +229,7 @@ header .sub-header ul li.active a
         border: 1px solid #dcdcdc;
     }
 
-/*-------------------------------*/
-/* Temp - remove for production  */
-/*-------------------------------*/
-.show-grid {
-margin-top: 10px;
-margin-bottom: 20px;
-}
 
-.show-grid [class*="span"] {
-	background-color: #eee;
-	text-align: center;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	min-height: 40px;
-	line-height: 40px; 
-}
-
-.show-grid-blue [class*="span"]
-{
-    background-color: #0066ff !important;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.the-icons li {
-float: left;
-width: 25%;
-line-height: 25px;
-}
-
-/*-------------------------------*/
-/* Temp - remove for production  */
-/*-------------------------------*/
 
 
 

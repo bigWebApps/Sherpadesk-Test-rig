@@ -7,7 +7,6 @@
     <title></title>
 
     <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
     <link href="css/sherpadesk.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -17,16 +16,16 @@
     <form id="form1" runat="server">
         <header>
   	        <div class="header">
-                <div class="container-fluid">
-                    <div class="row-fluid">
-                        <div class="header-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 header-left">
 		                    <ul>
 			                    <li class="header-mtn"><a href="#"><img src="img/header/mountain.png" /></a></li>
                                 <li class="header-title"><a title="SherpaDesk" href="/home/">SherpaDesk</a></li>
 		                    </ul>
                         </div>
     	            
-                        <div class="header-right">
+                        <div class="col-lg-6 header-right">
 		                    <ul class="nav">
                                 <li class="dropdown add-item">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/header/plus_white.png" />Add</a>
@@ -59,9 +58,9 @@
                 </div>
   	        </div>
             <div class="sub-header">
-                <div class="container-fluid">                    
-                    <div class="row-fluid">
-                        <div class="span12">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="col-md-12">
                             <p class="mobile-nav">Menu</p>
                             <ul>
                                 <li><a href="#cssgrid">CSS Layout Grids</a></li>
@@ -77,14 +76,14 @@
             </div>
         </header>
 
-        <div class="container-fluid">
+        <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
             </asp:ContentPlaceHolder>
         </div>
 
     <footer>
-        <div class="container-fluid">
+        <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
         
             </asp:ContentPlaceHolder>
