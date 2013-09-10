@@ -104,6 +104,7 @@
     <Content Include="portal\js\bootstrap.min.js" />
     <Content Include="portal\js\jquery.js" />
     <Content Include="portal\js\main.js" />
+    <Content Include="portal\js\placeholder.js" />
     <Content Include="portal\portal-no-kb.aspx" />
     <Content Include="portal\portal.aspx" />
     <Content Include="Web.config" />

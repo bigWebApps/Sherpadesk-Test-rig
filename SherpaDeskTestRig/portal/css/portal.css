@@ -34,6 +34,12 @@ section
 
 
 /*-------------------------------*/
+/*       Placeholder for IE      */
+/*-------------------------------*/
+
+.placeholder { color: #aaa; }
+
+/*-------------------------------*/
 /*       Master Header           */
 /*-------------------------------*/
 
@@ -113,6 +119,7 @@ section
     {
         font-size: 18px;
         width: 100%;
+        min-height: 50px;
         margin: 0;
         padding: 10px 8px;
         border: 2px solid #CCCCCC;
@@ -186,8 +193,7 @@ section
 
 .sd_portal div.article
 {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
 }
 .sd_portal .article h1.title
 {
@@ -262,7 +268,7 @@ section
 {
     display: inline;
     float: left;
-    margin: 20px 0 10px 0;
+    margin: 0 0 20px 0;
     padding: 20px 0;
 }
 
@@ -427,6 +433,36 @@ section
             background-color: #004e8b;
             border-color: #004e8b;
         }
+
+/*-------------------------------*/
+/*       Portal Inputs           */
+/*-------------------------------*/
+
+.sd_portal .add-response
+{
+    margin-bottom: 50px;
+}
+
+.sd_portal .add-response input,
+.sd_portal .add-response textarea
+{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    color: #222222;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    outline: 0 none !important;
+    vertical-align: baseline;
+}
+
+.sd_portal .add-response textarea
+{
+    min-height: 150px;
+}
 
 /*-------------------------------*/
 /*         Mobile view           */

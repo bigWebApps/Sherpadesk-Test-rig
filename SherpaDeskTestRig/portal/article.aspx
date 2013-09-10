@@ -74,9 +74,28 @@
                         </ol>
 	                    </div>
                     </div><!-- End Comments -->
-
                 </div>
-            </div>
+
+                <!-- Start Add Response -->
+                <div class="add-response">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Leave a Response</h2>
+                        
+                            <input type="text" name="name" placeholder="Your Name" />
+                            <input type="email" name="email" placeholder="Your Email" />                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn-lg btn-success">Leave Response</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><!-- End LEFT Side -->
 
             <!-- Start Right Side -->
             <div class="col-md-3">
@@ -130,4 +149,5 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
 </asp:Content>
