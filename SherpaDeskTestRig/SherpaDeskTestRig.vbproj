@@ -86,8 +86,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\sherpadesk.css" />
     <Content Include="default.aspx" />
-    <Content Include="img\glyphicons-halflings-white.png" />
-    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\header\help.png" />
     <Content Include="img\header\mountain.png" />
     <Content Include="img\header\plus_white.png" />
@@ -182,6 +181,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
