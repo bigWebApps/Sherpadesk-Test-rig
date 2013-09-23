@@ -11,9 +11,13 @@
                 <!-- Top Article section -->
                 <div class="row">
                     <div class="col-lg-12 article">
-                        <h1 class="title">How do I change the number of technicians from 2 to 1?</h1>
-                        <p>Across the sea of space, the stars are other suns. The regret on our side is, they used to say years ago, we are reading about you in science class.</p>
-                        <p>Now they say, we are reading about you in history class. Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development. As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest. For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                        <div class="article-title">
+                            <h1 class="title">How do I change the number of technicians from 2 to 1?</h1>
+                        </div>
+                        <div class="article-body">
+                            <p>Across the sea of space, the stars are other suns. The regret on our side is, they used to say years ago, we are reading about you in science class.</p>
+                            <p>Now they say, we are reading about you in history class. Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development. As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest. For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                        </div>
                     </div>                    
                 </div>
 
@@ -171,21 +175,21 @@
 
             function saveArticle() {
                 // save content if you need
-                var html = $('.article').redactor('get');
+                var html = $('.article-body, .article-title').redactor('get');
 
                 // destroy editor
-                $('.article').redactor('destroy');
+                $('.article-body, .article-title').redactor('destroy');
 
                 alert("Add script location here to save changes");
             }
 
             function cancelEdit() {
                 // destroy editor
-                $('.article').redactor('destroy');
+                $('.article-body, .article-title').redactor('destroy');
             }
 
-            $('.article').on('click', function () {               
-
+            $('.article-body, .article-title').on('click', function () {               
+                
                 $(this).redactor({
                     buttonsAdd: ['|', 'saveButton', 'cancelButton' ],
                     buttonsCustom: {
