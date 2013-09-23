@@ -97,6 +97,7 @@
     <Content Include="portal\article.aspx" />
     <Content Include="portal\css\bootstrap.css" />
     <Content Include="portal\css\portal.css" />
+    <Content Include="portal\css\redactor.css" />
     <Content Include="portal\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="portal\img\article-icon.png" />
     <Content Include="portal\img\question-icon.png" />
@@ -105,6 +106,7 @@
     <Content Include="portal\js\jquery.js" />
     <Content Include="portal\js\main.js" />
     <Content Include="portal\js\placeholder.js" />
+    <Content Include="portal\js\redactor.min.js" />
     <Content Include="portal\portal-no-kb.aspx" />
     <Content Include="portal\portal.aspx" />
     <Content Include="Web.config" />

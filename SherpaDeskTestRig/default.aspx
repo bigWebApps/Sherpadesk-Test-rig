@@ -191,6 +191,7 @@
                     <button class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
+
             </div>
             <div class="col-lg-6">
                 <h3>Icons</h3>

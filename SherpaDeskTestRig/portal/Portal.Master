@@ -8,6 +8,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/portal.css" rel="stylesheet" />
+    <link href="css/redactor.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -53,10 +54,15 @@
 
     <!-- Scripts  -->
     <script src="js/jquery.js"></script>
+    <script src="js/redactor.min.js"></script>
     <script src="js/placeholder.js"></script>
     <script>
         $('input, textarea').placeholder();
-    </script>    
+    </script>
+    
+    <asp:ContentPlaceHolder ID="ScriptsInFooter" runat="server">
+
+    </asp:ContentPlaceHolder>            
     </form>
 </body>
 </html>

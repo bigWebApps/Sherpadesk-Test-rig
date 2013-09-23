@@ -63,6 +63,14 @@ ContentPlaceHolder2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:SherpaDeskTestRig.Portal.ScriptsInFooter">
+	<summary>
+ScriptsInFooter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:SherpaDeskTestRig.SherpaDesk_Main.head">
 	<summary>
 head control.

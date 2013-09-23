@@ -191,7 +191,8 @@ section
 /*        Single Article         */
 /*-------------------------------*/
 
-.sd_portal div.article
+.sd_portal div.article,
+.sd_portal .portal-home
 {
     margin-bottom: 30px;
 }
@@ -199,15 +200,23 @@ section
 {
     margin-top: 0;
 }
-.sd_portal .article a.btn-primary
+.sd_portal .portal-home a.btn-primary
 {
     color: #ffffff;
     margin: 20px 0;
 }
-    .sd_portal .article a.btn-primary:hover
+    .sd_portal .portal-home a.btn-primary:hover
     {
         text-decoration: none;
     }
+
+
+.sd_portal .redactor_toolbar li a.redactor_btn_saveButton {
+	background: url(../img/saveButton.png) no-repeat;
+}
+.sd_portal .redactor_toolbar li a.redactor_btn_cancelButton {
+	background: url(../img/cancelButton.png) no-repeat;
+}
 
 /*-------------------------------*/
 /*         Sidebar all           */
