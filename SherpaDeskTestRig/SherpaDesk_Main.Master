@@ -68,7 +68,8 @@
                                 <li><a href="#components">Components</a></li>
                                 <li><a href="#tables">Table Grids</a></li>  
                                 <li><a href="#">Dashboard</a></li>
-                                <li><a href="portal/portal.aspx">Portal</a></li>                              
+                                <li><a href="portal/portal.aspx">Portal</a></li> 
+                                <li><a href="#">Accounts</a></li>                             
                             </ul>
                         </div>
                     </div>

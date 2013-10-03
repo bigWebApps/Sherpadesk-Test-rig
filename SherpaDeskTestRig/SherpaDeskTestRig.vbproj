@@ -100,7 +100,14 @@
     <Content Include="portal\css\redactor.css" />
     <Content Include="portal\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="portal\img\article-icon.png" />
+    <Content Include="portal\img\cancelButton.png" />
     <Content Include="portal\img\question-icon.png" />
+    <Content Include="portal\img\save %281%29.png" />
+    <Content Include="portal\img\save.png" />
+    <Content Include="portal\img\saveButton.png" />
+    <Content Include="portal\img\tech-icon.png" />
+    <Content Include="portal\img\vt-arrow-down.png" />
+    <Content Include="portal\img\vt-arrow-up.png" />
     <Content Include="portal\js\bootstrap.js" />
     <Content Include="portal\js\bootstrap.min.js" />
     <Content Include="portal\js\jquery.js" />
@@ -207,7 +214,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="accounts\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
