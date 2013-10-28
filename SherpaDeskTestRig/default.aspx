@@ -4,52 +4,52 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <section>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <a name="cssgrid"></a>
             <h2>CSS Grid Layout</h2>
         </div>  
     </div>
    
     <div class="row">       
-	    <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
-        <div class="col-lg-1"><div class="show-grid">1</div></div>
+	    <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
+        <div class="col-sm-1"><div class="show-grid">1</div></div>
     </div>    
     <div class="row">       
-	    <div class="col-lg-3"><div class="show-grid">3</div></div>
-        <div class="col-lg-3"><div class="show-grid">3</div></div>
-        <div class="col-lg-3"><div class="show-grid">3</div></div>
-        <div class="col-lg-3"><div class="show-grid">3</div></div>
+	    <div class="col-sm-3"><div class="show-grid">3</div></div>
+        <div class="col-sm-3"><div class="show-grid">3</div></div>
+        <div class="col-sm-3"><div class="show-grid">3</div></div>
+        <div class="col-sm-3"><div class="show-grid">3</div></div>
     </div>  
     <div class="row">       
-	    <div class="col-lg-4"><div class="show-grid">4</div></div>
-        <div class="col-lg-4"><div class="show-grid">4</div></div>
-        <div class="col-lg-4"><div class="show-grid">4</div></div>
+	    <div class="col-sm-4"><div class="show-grid">4</div></div>
+        <div class="col-sm-4"><div class="show-grid">4</div></div>
+        <div class="col-sm-4"><div class="show-grid">4</div></div>
     </div>
     <div class="row">       
-	    <div class="col-lg-6">
+	    <div class="col-sm-6">
             <div class="show-grid">6
                 <div class="row">                                     
-                    <div class="col-lg-6"><div class="show-grid-blue">Nested 6</div></div>
-                    <div class="col-lg-6"><div class="show-grid-blue">Nested 6</div></div>
+                    <div class="col-sm-6"><div class="show-grid-blue">Nested 6</div></div>
+                    <div class="col-sm-6"><div class="show-grid-blue">Nested 6</div></div>
                 </div>
             </div>   
 	    </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
             <div class="show-grid">6
                 <div class="row">                                     
-                    <div class="col-lg-4"><div class="show-grid-blue">Nested 4</div></div>
-                    <div class="col-lg-4"><div class="show-grid-blue">Nested 4</div></div>
-                    <div class="col-lg-4"><div class="show-grid-blue">Nested 4</div></div>
+                    <div class="col-sm-4"><div class="show-grid-blue">Nested 4</div></div>
+                    <div class="col-sm-4"><div class="show-grid-blue">Nested 4</div></div>
+                    <div class="col-sm-4"><div class="show-grid-blue">Nested 4</div></div>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
 </section>
 <section>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <a name="buttons"></a>
             <h2>Buttons</h2>
             <p>
@@ -97,7 +97,7 @@
 </section>
 <section>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-12">
             <a name="tables"></a>
             <h2>Table Grids</h2>
               <table class="table">
@@ -149,7 +149,7 @@
     <a name="components"></a>
     <h2>Components</h2>
     <div class="row"> 
-            <div class="col-lg-2">
+            <div class="col-sm-2">
                 <h3>Progress Bars</h3>
                 <p>Standard</p>
                 <div class="progress">
@@ -163,7 +163,7 @@
                   <div class="bar bar-danger" style="width: 10%;"></div>
                 </div>
             </div> 
-            <div class="col-lg-2">
+            <div class="col-sm-2">
                 <h3>Badges</h3>
                 <p>Default <span class="badge">1</span></p>
                 <p>Success <span class="badge badge-success">2</span></p>
@@ -172,7 +172,7 @@
                 <p>Info <span class="badge badge-info">8</span></p>
                 <p>Black <span class="badge badge-inverse">10</span></p>
             </div>
-            <div class="col-lg-2">
+            <div class="col-sm-2">
                 <h3>Modal Box Sample</h3>
                 <!-- Button to trigger modal -->
                 <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
@@ -193,7 +193,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
                 <h3>Icons</h3>
                 <button class="btn btn-primary"><span class="glyphicon glyphicon-glass icon-white"></span> sample</button> 
                 <p>
