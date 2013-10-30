@@ -18,17 +18,17 @@
   	        <div class="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 header-left">
+                        <div class="col-sm-6 header-left">
 		                    <ul>
-			                    <li class="header-mtn"><a href="#"><img src="img/header/mountain.png" /></a></li>
-                                <li class="header-title"><a title="SherpaDesk" href="/home/">SherpaDesk</a></li>
+			                    <li class="header-mtn"><a href="#"><img src="../img/header/mountain.png" /></a></li>
+                                <li class="header-search"><input type="text" class="form-control" placeholder="Search"></li>
 		                    </ul>
                         </div>
     	            
-                        <div class="col-lg-6 header-right">
+                        <div class="col-sm-6 header-right">
 		                    <ul class="nav">
                                 <li class="dropdown add-item">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/header/plus_white.png" />Add</a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/header/plus_white.png" />Add</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Ticket</a></li>
                                             <li><a href="#">Account</a></li>
@@ -41,7 +41,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown profile">
-                                        <a><img class="Avtr" src="https://www.gravatar.com/avatar/caa7da1b2393aabf76936dc24b7a2ff2?s=24">Ben Pfohl</a>
+                                        <a class="profile-name">Support Guy</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Configuration</a></li>
                                             <li><a href="#">Support</a></li>
@@ -50,7 +50,7 @@
                                         </ul>
                                     </li>
                                     <li><a title="Page Help" onclick="window.open(&quot;/Support/Help.aspx?s=%2fhome%2fticket%2fViewTicket.aspx%3fid%3d13711&quot;, '_blank', 'location=0,menubar=0,resizable=1,scrollbars=1,status=0,titlebar=0,toolbar=0,top=' + Mp_GetPopupPositionY(event) + ',left=' + Mp_GetPopupPositionX(680)  + ',width=680,height=725');return false;">
-                                        <img src="img/header/help.png" /></a>
+                                        <img src="../img/header/help.png" /></a>
                                     </li>
 		                    </ul>
                         </div>
@@ -60,7 +60,7 @@
             <div class="sub-header">
                 <div class="container">                    
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-sm-12">
                             <p class="mobile-nav">Menu</p>
                             <ul>
                                 <li><a href="#cssgrid">CSS Layout Grids</a></li>
@@ -92,9 +92,14 @@
     </footer>
 
     <!-- Scripts  -->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
+
+        
+        <asp:ContentPlaceHolder ID="AddJavascriptHere" runat="server">
+        
+        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

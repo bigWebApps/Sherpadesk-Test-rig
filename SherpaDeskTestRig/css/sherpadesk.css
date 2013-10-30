@@ -26,6 +26,17 @@ section
 {
     margin-bottom: 50px;
 }
+
+.right
+{
+    float: right;
+}
+
+.left
+{
+    float: left;
+}
+
 /*-------------------------------*/
 /* Temp - remove for production  */
 /*-------------------------------*/
@@ -55,9 +66,9 @@ width: 25%;
 line-height: 25px;
 }
 
-/*-------------------------------*/
-/* Temp - remove for production  */
-/*-------------------------------*/
+/*-----------------------------------*/
+/* END Temp - remove for production  */
+/*-----------------------------------*/
 
 
 /*-------------------------------*/
@@ -121,6 +132,11 @@ header .header {
             font-size: 21px;
             padding-left: 10px;
         }
+        header .header .header-left ul li.header-search
+        {
+            width: 65%;
+            padding: 7px;
+        }
     header .header .header-right ul
     {
         float: right;
@@ -128,7 +144,6 @@ header .header {
     header .header .header-right ul li
     {
         padding: 0 10px;
-        border-right: 1px solid #245d89;
     }
         header .header .header-right li.profile img
         {
@@ -140,9 +155,13 @@ header .header {
         {
             margin-right: 10px;
         }
+        header .header .header-right li.profile a.profile-name
+        {
+            font-weight: bold;
+            line-height: 52px;
+        }
         header .header .header-right ul li:first-child
         {
-            border-left: 1px solid #245d89;
         }
 
         /*------------- Bootstrap Overrides --------------*/
@@ -229,13 +248,272 @@ header .sub-header ul li.active a
         border: 1px solid #dcdcdc;
     }
 
+/*-------------------------------*/
+/*          Dashboard            */
+/*-------------------------------*/
 
+.add-item .top-action-item {
+}
+.add-item ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.add-item ul li ul li {
+    text-align: center;
+}
+.add-item ul li ul li a {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.add-item ul li ul li:last-child {
+    border: medium none;
+}
+.add-item ul li {
+    margin: 0;
+}
+.add-item ul li span.config {
+    font-weight: bold;
+    padding-right: 20px;
+    position: relative;
+    right: 0;
+    top: 8px;
+}
+.add-item ul li ul {
+    background-color: #058DC7;
+    border-bottom: 4px solid #FFFFFF;
+    border-left: 4px solid #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    border-right: 4px solid #FFFFFF;
+    left: -999em;
+    margin: 11px 0 0 -14px;
+    padding: 4px 11px;
+    position: absolute;
+    width: 115px;
+    z-index: 999999999;
+}
+.add-item ul li ul li {
+    background-color: #058DC7;
+    border-bottom: 1px solid #09A0E1;
+    border-left: medium none;
+    border-right: medium none;
+    color: white;
+    display: block;
+    float: none;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    margin: 0 -9px;
+    min-width: 100px;
+    padding: 8px;
+}
+.add-item ul li ul li:hover {
+    background-color: #09A0E1;
+}
+.add-item ul li:hover ul {
+    left: auto;
+}
 
+/*-------------------------------*/
+/*     Dashboard Time Log        */
+/*-------------------------------*/
 
+.home-time-log
+{
+    display: none;
+    min-height: 100px;
+    background-color: #276da3;
+    color: #ffffff;
+    padding: 20px;
+}
+    .home-time-log .container
+    {
+        max-width: 900px;
+    }
+    .home-time-log h3
+    {
+        padding: 0px 10px 20px 0;
+        margin: 0;
+    }
+        .home-time-log a.time-calendar,
+        .home-time-log a.time-close
+        {
+            color: #ffffff;
+        }
+            .home-time-log a.time-calendar:hover
+            {
+                color: #09a0e1;
+                cursor: pointer;
+            }
+    .home-time-log a.time-close
+    {
+        margin-top: -15px;
+    }
+        .home-time-log a.time-close:hover
+        {
+            cursor: pointer;
+        }
+        .home-time-log a.time-close span
+        {
+            font-weight: bold;
+            font-size: 22px;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+    .home-time-log label
+    {
+        font-weight: normal;
+        font-size: 12px;
+        display: block;
+    }
+    .home-time-log input,
+    .home-time-log textarea,
+    .home-time-log select
+    {
+        border: solid 2px #004174 !important;
+        -webkit-box-shadow:  0px 0px 0px 4px rgba(0, 0, 0, 0.1);        
+        box-shadow:  0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        outline: 0 !important;
+        color: #222;
+        margin: 0;
+        background-color: white;        
+        vertical-align: baseline;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .home-time-log .btn
+    {
+        -webkit-box-shadow:  0px 0px 0px 4px rgba(0, 0, 0, 0.1);        
+        box-shadow:  0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+    }
+    .home-time-log .time-hours input
+    {
+        height: 101px;
+        font-size: 65px;
+        text-align: center;
+    }
+    .home-time-log textarea
+    {
+        height: 103px;
+    }
+    .home-time-log .time-start input,
+    .home-time-log .time-end input,
+    .home-time-log .time-start select,
+    .home-time-log .time-end select
+    {
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 17px;
+        vertical-align: middle;
+        height: 34px;
+    }
+
+/*-------------------------------*/
+/*       Dashboard Queues        */
+/*-------------------------------*/
+
+.widget
+{
+    margin-bottom: 30px;
+}
+
+    .widget h4.w_head
+    {
+        padding: 8px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: #276da3;
+        margin: 0;
+    }
+
+    .widget div.w_add
+    {
+        position: absolute;
+        right: 15px;
+        top: 6px;
+    }
+        .widget div.w_add a
+        {
+            color: #276da3;
+            font-size: 12px;
+        }
+            .widget div.w_add a:hover
+            {
+                color: #09a0e1;
+            }
+    
+    .widget ul li
+        {
+            padding: 5px 0 5px 10px;
+            position: relative;
+        }
+    .widget ul li:hover
+    {
+        background-color: #f2fff3 !important;
+    }
+    .widget ul li a            
+    {
+        display: block;
+        color: #222222;
+    }
+    .widget ul li span.badge
+    {
+        background-color: #276da3;
+    }
+
+ /*-- Widget Specific --*/
+
+ /*-- Queues --*/
+
+        
+            .widget.queues ul li .q_add_tkt
+            {
+                display: none;
+                position: absolute;
+                right: -98px;
+                top: 0px;
+                font-size: 12px;
+                border-radius: 4px;
+                padding: 5px 10px;
+                background-color: #276da3;
+                z-index:8000;
+            }
+            .widget.queues ul li .q_add_tkt:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 6px solid transparent;
+                border-right: 8px solid #276da3;
+                border-bottom: 6px solid transparent;
+                left: -8px;
+                top: 8px;
+            }
+            .widget.queues ul li:hover .q_add_tkt
+            {
+                display: block;
+            }
+            .widget.queues ul li .q_add_tkt a
+            {
+                display: block;
+                color: #ffffff;
+            }
+            
 
 /*-------------------------------*/
 /*         Mobile view           */
 /*-------------------------------*/
+
+@media (max-width: 991px)
+{
+    .widget.queues
+    {
+        margin-right: 95px;
+    }
+}
 
 @media (max-width: 768px)
 {
@@ -266,3 +544,5 @@ header .sub-header ul li.active a
         display: none;
     }
 }
+
+
