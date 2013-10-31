@@ -205,27 +205,52 @@
 
             </div><!-- End Widget --> 
 
-            <div class="col-md-3 widget">
+            <div class="col-md-3 widget todos">
                 <div class="w_add">
                     <a data-toggle="modal" href="#addTodoList"><span class="glyphicon glyphicon-plus"></span> Add ToDo List</a>
                 </div>
-                <h4 class="w_head">ToDo Lists</h4>
-                <ul class="queues">
-                    <li>
-                        <a href="#">Future Consideration <span class="badge pull-right">30</span></a>
+                <a href="#allToDos"><h4 class="w_head">ToDo Lists</h4></a>
+                <ul>
+                    <li class="td_list">
+                        <a href="#" class="todo_label">List #1 Name</a>
+                        <p><small>Project - The name of Some Project</small></p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="pull-left" value="">
+                                <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. Aye nah then ne'ermind. <span class="label label-default">Ben Pfohl</span> <span class="label label-warning">Oct 30, 2013</span></p>
+                                <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="pull-left" value="">
+                                <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. <span class="label label-default">Patrick Clements</span> <span class="label label-info">Oct 31, 2013</span></p>
+                                <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="pull-left" value="">
+                                <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin'. <span class="label label-default">Jon Vickers</span> <span class="label label-info">Nov 1, 2013</span></p>
+                                <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="td_add">Add ToDo</a>
                     </li>
-                    <li>
-                        <a href="#">Mobile App <span class="badge pull-right">0</span></a>
+                    <li class="td_list">
+                        <a href="#" class="todo_label">List #2 Name - Click to goto list</a>
+                        <p><small>Ticket <strong>#12345</strong></small></p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="pull-left" value="">
+                                <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. Aye nah then ne'ermind. <span class="label label-default">Ben Pfohl</span></p>
+                                <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="pull-left" value="">
+                                <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. <span class="label label-default">unassigned</span> <span class="label label-danger">Oct 15, 2013</span></p>
+                                <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
+                            </li>                           
+                        </ul>
+                        <a href="#" class="td_add">Add ToDo</a>
                     </li>
-                    <li>
-                        <a href="#">New Ticket <span class="badge pull-right">1</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Pre-Development <span class="badge pull-right">10</span></a>
-                    </li>
-                    <li>
-                        <a href="#">SherpaDesk <span class="badge pull-right">12</span></a>
-                    </li>
+
                 </ul>
 
                 <!-- Add Queue Modal -->
@@ -251,24 +276,12 @@
             
             <div class="col-md-3 widget">
                 <div class="w_add">
-                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Add ToDo</a>
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Add Account</a>
                 </div>
-                <h4 class="w_head">ToDo (s)</h4>
+                <h4 class="w_head">Accounts</h4>
                 <ul class="queues">
                     <li>
-                        <a href="#">Future Consideration <span class="badge pull-right">30</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Mobile App <span class="badge pull-right">0</span></a>
-                    </li>
-                    <li>
-                        <a href="#">New Ticket <span class="badge pull-right">1</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Pre-Development <span class="badge pull-right">10</span></a>
-                    </li>
-                    <li>
-                        <a href="#">SherpaDesk <span class="badge pull-right">12</span></a>
+                        <a href="#">Some Big Client<span class="badge pull-right">30</span></a>
                     </li>
                 </ul>
             </div><!-- End Widget --> 

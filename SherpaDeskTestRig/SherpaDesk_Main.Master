@@ -21,7 +21,7 @@
                         <div class="col-sm-6 header-left">
 		                    <ul>
 			                    <li class="header-mtn"><a href="#"><img src="../img/header/mountain.png" /></a></li>
-                                <li class="header-search"><input type="text" class="form-control" placeholder="Search"></li>
+                                <li class="header-search"><input type="text" class="form-control" placeholder="Search Tickets"></li>
 		                    </ul>
                         </div>
     	            

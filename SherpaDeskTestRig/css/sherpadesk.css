@@ -137,6 +137,12 @@ header .header {
             width: 65%;
             padding: 7px;
         }
+            header .header .header-left ul li.header-search input
+            {
+                padding-left: 30px;
+                background: #ffffff url(../img/search_lense.png) 3px center no-repeat;
+                background-size: 22px 22px;
+            }
     header .header .header-right ul
     {
         float: right;
@@ -452,7 +458,7 @@ header .sub-header ul li.active a
         }
     .widget ul li:hover
     {
-        background-color: #f2fff3 !important;
+        background-color: #f2fff3;
     }
     .widget ul li a            
     {
@@ -469,7 +475,8 @@ header .sub-header ul li.active a
  /*-- Queues --*/
 
         
-            .widget.queues ul li .q_add_tkt
+            .widget ul li .q_add_tkt,
+            .widget ul li ul li .td_edit
             {
                 display: none;
                 position: absolute;
@@ -481,7 +488,13 @@ header .sub-header ul li.active a
                 background-color: #276da3;
                 z-index:8000;
             }
-            .widget.queues ul li .q_add_tkt:before {
+        .widget ul li ul li .td_edit
+        {
+            top: 2px;
+            right: -89px;
+        }
+            .widget ul li .q_add_tkt:before,
+            .widget ul li ul li .td_edit:before {
                 content: "";
                 position: absolute;
                 width: 0;
@@ -492,16 +505,46 @@ header .sub-header ul li.active a
                 left: -8px;
                 top: 8px;
             }
-            .widget.queues ul li:hover .q_add_tkt
+            .widget ul li:hover .q_add_tkt,
+            .widget ul li ul li:hover .td_edit
             {
                 display: block;
             }
-            .widget.queues ul li .q_add_tkt a
+            .widget ul li .q_add_tkt a,
+            .widget ul li ul li .td_edit a
             {
                 display: block;
                 color: #ffffff;
             }
             
+ /*-- Todos --*/
+
+.widget.todos ul > li:hover
+{
+    background-color: transparent;
+}
+
+.widget.todos li.td_list
+{
+
+}
+    .widget.todos li.td_list a.todo_label
+    {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .widget.todos li.td_list a.td_add
+    {
+        font-size: 14px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .widget.todos ul li.td_list ul li p
+    {
+        padding-left: 25px;
+    }
+
+
 
 /*-------------------------------*/
 /*         Mobile view           */
