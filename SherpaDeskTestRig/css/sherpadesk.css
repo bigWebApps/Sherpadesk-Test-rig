@@ -115,13 +115,11 @@ header .header {
     header .header .header-left ul
     {
         padding: 0;
-        border-left: 1px solid #245d89;
     }
     header .header .header-left ul li
     {
         float: left;
         padding: 0;
-        border-left: 1px solid #245d89;
     }
         header .header .header-left ul li.header-mtn:hover
         {
