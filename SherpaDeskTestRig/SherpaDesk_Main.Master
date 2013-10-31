@@ -28,7 +28,7 @@
                         <div class="col-sm-6 header-right">
 		                    <ul class="nav">
                                 <li class="dropdown add-item">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/header/plus_white.png" />Add</a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Ticket</a></li>
                                             <li><a href="#">Account</a></li>
@@ -41,7 +41,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown profile">
-                                        <a class="profile-name">Support Guy</a>
+                                        <img src="https://www.gravatar.com/avatar/caa7da1b2393aabf76936dc24b7a2ff2?s=24" /><a class="profile-name">Support Guy</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Configuration</a></li>
                                             <li><a href="#">Support</a></li>

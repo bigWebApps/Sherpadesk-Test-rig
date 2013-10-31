@@ -153,16 +153,15 @@ header .header {
         {
             padding: 2px;
             background-color: #ffffff;
+            margin: 11px 10px 0 0;
+            float: left;
         }
-        header .header .header-right li.profile img,
-        header .header .header-right li.add-item img
-        {
-            margin-right: 10px;
-        }
+        
         header .header .header-right li.profile a.profile-name
         {
             font-weight: bold;
             line-height: 52px;
+            padding-left: 40px;
         }
         header .header .header-right ul li:first-child
         {
@@ -419,20 +418,39 @@ header .sub-header ul li.active a
 /*       Dashboard Queues        */
 /*-------------------------------*/
 
+.widget-area
+{
+    min-height: 100px;
+}
+    .widget-area .ui-sortable-placeholder { border: 3px dashed #cccccc; visibility: visible !important; height: 100px !important; }
+	.widget-area .ui-sortable-placeholder * { visibility: hidden; }
 .widget
 {
+    position: relative;
+    width: 100%;
     margin-bottom: 30px;
+    padding: 0 10px 10px;
+    border: 1px solid #E5E5E5;
 }
-
+    .widget.pep-active
+    {
+        max-width:400px;
+    }
     .widget h4.w_head
     {
         padding: 8px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        color: #276da3;
-        margin: 0;
-    }
+        color: #004174;
+        text-shadow: 1px 1px 1px #ffffff;
+        margin: 0 -10px 10px;
+        background-color: #F1F1F1;
+        border-bottom: 1px solid #E5E5E5;
+        border-top: 1px solid #ffffff;
 
+    }
+    .widget h4.w_head:hover
+    {
+        cursor: move;
+    }
     .widget div.w_add
     {
         position: absolute;
@@ -441,7 +459,8 @@ header .sub-header ul li.active a
     }
         .widget div.w_add a
         {
-            color: #276da3;
+            color: #004174;
+            text-shadow: 1px 1px 1px #ffffff;
             font-size: 12px;
         }
             .widget div.w_add a:hover
@@ -451,7 +470,7 @@ header .sub-header ul li.active a
     
     .widget ul li
         {
-            padding: 5px 0 5px 10px;
+            padding: 5px 0 5px 0;
             position: relative;
         }
     .widget ul li:hover
@@ -470,22 +489,21 @@ header .sub-header ul li.active a
 
  /*-- Widget Specific --*/
 
- /*-- Queues --*/
-
+        /*-- Queues --*/
         
-            .widget ul li .q_add_tkt,
-            .widget ul li ul li .td_edit
-            {
-                display: none;
-                position: absolute;
-                right: -98px;
-                top: 0px;
-                font-size: 12px;
-                border-radius: 4px;
-                padding: 5px 10px;
-                background-color: #276da3;
-                z-index:8000;
-            }
+        .widget ul li .q_add_tkt,
+        .widget ul li ul li .td_edit
+        {
+            display: none;
+            position: absolute;
+            right: -98px;
+            top: 0px;
+            font-size: 12px;
+            border-radius: 4px;
+            padding: 5px 10px;
+            background-color: #276da3;
+            z-index:8000;
+        }
         .widget ul li ul li .td_edit
         {
             top: 2px;
@@ -515,33 +533,53 @@ header .sub-header ul li.active a
                 color: #ffffff;
             }
             
- /*-- Todos --*/
+         /*-- Todos --*/
 
-.widget.todos ul > li:hover
-{
-    background-color: transparent;
-}
+        .widget.todos ul > li:hover
+        {
+            background-color: transparent;
+        }
 
-.widget.todos li.td_list
-{
+        .widget.todos li.td_list
+        {
+            padding: 0 0 20px 0;
+        }
+            .widget.todos li.td_list a.todo_label
+            {
+                font-weight: bold;
+            }
+            .widget.todos li.td_list a.td_add
+            {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .widget.todos ul li.td_list ul li p
+            {
+                padding-left: 25px;
+            }
 
-}
-    .widget.todos li.td_list a.todo_label
+       /*-- Recent Tickets --*/
+
+    .widget.recent_tks ul li.w_tkt_single
     {
-        text-decoration: underline;
-        font-weight: bold;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 10px;
     }
-    .widget.todos li.td_list a.td_add
-    {
-        font-size: 14px;
-        text-decoration: underline;
-        font-weight: bold;
-    }
-    .widget.todos ul li.td_list ul li p
-    {
-        padding-left: 25px;
-    }
+        .widget.recent_tks ul li.w_tkt_single:last-child
+        {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
 
+        .widget.recent_tks ul li.w_tkt_single p
+        {
+            padding-left: 55px;
+        }
+       .widget.recent_tks ul li.w_tkt_single img.r_tk_avatar
+        {
+            width: 48px;
+            border-radius: 24px;
+        }
 
 
 /*-------------------------------*/
