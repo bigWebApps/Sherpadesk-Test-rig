@@ -151,7 +151,112 @@
     </section><!-- End Home Time Logger Section --> 
 
     <section>
-
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dropdown">
+                  <button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <span class="caret"></span> </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="new_message" checked="checked"> New Messages
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="open_ticket" checked="checked"> Open Ticket
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="open_end_user" checked="checked"> Open as End User
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="on_hold" checked="checked"> On Hold
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="follow_up_dates" checked="checked"> Follow-Up Dates
+                            </label>
+                        </div>
+                    </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="unconfirmed" checked="checked"> Unconfirmed
+                            </label>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-12">            
+                <ul class="counters">
+                    <li class="new_message">
+                        <div class="counter">
+                            <a href="worklist/worklist.aspx?if=1&amp;nm=0&amp;sort=muatt&amp;techId=4" id="ctl00_PageBody_hlNewMessagesCount">
+                                <h1>3</h1>
+                                <span id="ctl00_PageBody_lblNewMessages" class="cnt_label">New Messages</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="open_tickets">
+                        <div class="counter">
+                            <a href="worklist/worklist.aspx?if=1&amp;sort=mts&amp;statusid=open" id="ctl00_PageBody_hlOpenCount">
+                                <h1>5</h1>
+                                <span id="ctl00_PageBody_lblOpenTickets" class="cnt_label">Open Tickets</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="open_end_user">
+                        <div class="counter">
+                            <a href="worklist/worklist.aspx?if=1&amp;sort=mut&amp;statusid=allopen" id="ctl00_PageBody_hlAsUserCount">
+                                <h1>8</h1><span id="ctl00_PageBody_ltrEndUserCustomName" class="cnt_label">Open as End User</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="on_hold">
+                        <div class="counter">
+                            <a href="worklist/worklist.aspx?if=1&amp;sort=mts&amp;statusid=on hold" id="ctl00_PageBody_hlOnHoldCount">
+                                <h1>2</h1>
+                                <span id="ctl00_PageBody_lblOnHold" class="cnt_label">On Hold</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="follow_up_dates">
+                        <div class="counter">
+                            <a href="worklist/worklist.aspx?if=1&amp;fu=1&amp;sort=tech&amp;statusid=allopen&amp;techId=4" id="ctl00_PageBody_hlFollowUpCount">
+                                <h1>0</h1>
+                                <span id="ctl00_PageBody_lblFollowUpDates" class="cnt_label">Follow-Up Dates</span>
+                            </a>
+                        </div>
+                    </li>
+        
+                    <li class="unconfirmed">
+                        <div class="counter">
+                            <a id="ctl00_PageBody_lbUnconfirmed" href="javascript:__doPostBack('ctl00$PageBody$lbUnconfirmed','')">
+                                <h1>2</h1>
+                                <span id="ctl00_PageBody_lblUnconfirmedUserTktsCount" class="cnt_label">Unconfirmed</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section><!-- End Dashboard Elements Section --> 
 
     <section>        
@@ -164,23 +269,23 @@
                     <h4 class="w_head">Queues</h4>
                     <ul>
                         <li>
-                            <a href="#">Future Consideration <span class="badge pull-right">30</span></a>
+                            <a href="#">Future Consideration <span class="pull-right"><strong>30</strong></span></a>
                             <div class="q_add_tkt"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Ticket</a></div>
                         </li>
                         <li>
-                            <a href="#">Mobile App <span class="badge pull-right">0</span></a>
+                            <a href="#">Mobile App <span class="pull-right"><strong>0</strong></span></a>
                             <div class="q_add_tkt"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Ticket</a></div>
                         </li>
                         <li>
-                            <a href="#">New Ticket <span class="badge pull-right">1</span></a>
+                            <a href="#">New Ticket <span class="pull-right"><strong>1</strong></span></a>
                             <div class="q_add_tkt"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Ticket</a></div>
                         </li>
                         <li>
-                            <a href="#">Pre-Development <span class="badge pull-right">10</span></a>
+                            <a href="#">Pre-Development <span class="pull-right"><strong>10</strong></span></a>
                             <div class="q_add_tkt"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Ticket</a></div>
                         </li>
                         <li>
-                            <a href="#">SherpaDesk <span class="badge pull-right">12</span></a>
+                            <a href="#">SherpaDesk <span class="pull-right"><strong>12</strong></span></a>
                             <div class="q_add_tkt"><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Ticket</a></div>
                         </li>
                     </ul>
@@ -212,7 +317,7 @@
                     <h4 class="w_head">Accounts</h4>
                     <ul class="queues">
                         <li>
-                            <a href="#">Some Big Client<span class="badge pull-right">30</span></a>
+                            <a href="#">Some Big Client <span class="pull-right"><strong>30</strong></span></a>
                         </li>
                     </ul>
                 </div><!-- End Widget --> 
@@ -296,7 +401,7 @@
                     <ul>
                         <li class="w_tkt_single">
                             <img class="r_tk_avatar pull-left" src="../img/yeti-avatar.jpg" />
-                            <p><strong><span class="label label-success"># 724</span> Invoice E-mail Improvements</strong> <small><span class="label label-default">Just Now</span></small><br /><strong>[response]</strong> I am not near my iPad right now.  I was saying we should not show the menu drop down on iPad.  Use that menu icon for iPhone or similar size. What do you think? <small><span class="label label-primary">Account Name</span> <span class="label label-primary">Support Yeti</span> </small></p>
+                            <p><strong><span class="label label-success"># 724</span> Invoice E-mail Improvements</strong> <small><span class="label label-default">Just Now</span></small><br /><strong>[response]</strong> I am not near my iPad right now.  I was saying we should not show the menu drop down on iPad.  Use that menu icon for iPhone or similar size. What do you think? <small><span class="mes_label">Account Name | Support Yeti</span> </small></p>
                             <p class="w_tkt_s_attach">
 
                             </p>
@@ -305,19 +410,19 @@
                             <img class="r_tk_avatar pull-left" src="../img/yeti-avatar.jpg" />
                             <p><strong><span class="label label-success"># 1330</span> Modifying notifications sent to end users regarding level of priority </strong> <small><span class="label label-default">2 days ago</span></small><br /><strong>[response]</strong> Hi Patrick,
 
-Yes this is a good idea indeed, end users shouldn't be too involved into
-technician's activities :)
+                                Yes this is a good idea indeed, end users shouldn't be too involved into
+                                technician's activities :)
 
-Best regards,
+                                Best regards,
 
-Nicolas<small><span class="label label-primary">Account Name</span> <span class="label label-primary">Support Yeti</span> </small></p>
+                                Nicolas<small><span class="mes_label">Account Name | Support Yeti</span> </small></p>
                             <p class="w_tkt_s_attach">
 
                             </p>
                         </li>
                         <li class="w_tkt_single">
                             <img class="r_tk_avatar pull-left" src="../img/yeti-avatar.jpg" />
-                            <p><strong><span class="label label-default"># 1325</span> Getting an error when changing the resolution </strong><small><span class="label label-default">2 days ago</span></small><br /><strong>[response]</strong> See snag. <small><span class="label label-primary">SherpaDesk</span> <span class="label label-primary">Benjamin Pfohl</span> </small></p>
+                            <p><strong><span class="label label-default"># 1325</span> Getting an error when changing the resolution </strong><small><span class="label label-default">2 days ago</span></small><br /><strong>[response]</strong> See snag. <small><span class="mes_label">SherpaDesk | Benjamin Pfohl</span> </small></p>
                             <p class="w_tkt_s_attach">
                             </p>
                         </li>
@@ -352,14 +457,31 @@ Nicolas<small><span class="label label-primary">Account Name</span> <span class=
                     $("div.home-time-log").fadeIn();
                 }
             });
-        
+
+            //Make .widget-area (s) sortable
             $(".widget-area").sortable({
                 connectWith: ".widget-area",
-                handle: ".w_head",
-                stop: function (event, ui) {
-                    console.log(ui.position);
-                }
+                handle: ".w_head"
             });
+
+            //console log widget info
+            $( ".widget-area" ).on("sortupdate",function( event, ui ) {
+                var sorted = $( this ).sortable( "widget");
+                console.log(sorted);            
+            });
+
+            //Show hide counter items
+            
+            $('.checkbox input').on('change', function () {
+                var counter = $(this).data('counter');                      
+
+                if ($(this).is(':checked') || $('li.' + counter).is(':hidden')) {
+                    $('li.' + counter).show();
+                } else if ($(this).not(':checked') || $('li.' + counter).is(':visible')) {
+                    $('li.' + counter).hide();
+                };
+            });
+
         });
         
     </script>

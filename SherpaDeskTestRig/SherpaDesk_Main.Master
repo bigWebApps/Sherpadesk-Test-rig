@@ -63,13 +63,13 @@
                         <div class="col-sm-12">
                             <p class="mobile-nav">Menu</p>
                             <ul>
-                                <li><a href="#cssgrid">CSS Layout Grids</a></li>
-                                <li><a href="#buttons">Buttons</a></li>
-                                <li><a href="#components">Components</a></li>
-                                <li><a href="#tables">Table Grids</a></li>  
-                                <li><a href="#">Dashboard</a></li>
-                                <li><a href="portal/portal.aspx">Portal</a></li> 
-                                <li><a href="#">Accounts</a></li>                             
+                                <li><a href="../#cssgrid">CSS Layout Grids</a></li>
+                                <li><a href="../#buttons">Buttons</a></li>
+                                <li><a href="../#components">Components</a></li>
+                                <li><a href="../#tables">Table Grids</a></li>  
+                                <li><a href="../dashboard/default.aspx">Dashboard</a></li>
+                                <li><a href="../portal/portal.aspx">Portal</a></li> 
+                                <li><a href="../#">Accounts</a></li>                             
                             </ul>
                         </div>
                     </div>

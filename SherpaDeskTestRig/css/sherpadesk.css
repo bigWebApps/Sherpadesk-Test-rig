@@ -316,6 +316,43 @@ header .sub-header ul li.active a
     left: auto;
 }
 
+
+/*overview*/
+ul.dropdown-menu li div.checkbox
+{
+    margin-left: 10px;
+}
+
+ul.counters {
+    margin: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+    ul.counters li {
+        list-style: none;
+        display: table-cell;
+        text-align: center;
+        padding: 5px 13px 0 3px;
+        margin-top: 10px;
+    }
+        ul.counters li div.counter
+        {
+            background-color: #F1F1F1;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #E5E5E5;
+        }
+            ul.counters li div.counter a
+            {
+                color: #004174;
+            }
+        ul.counters li h1
+        {
+            margin: 0;
+            font-size: 72px;
+        }
+
 /*-------------------------------*/
 /*     Dashboard Time Log        */
 /*-------------------------------*/
@@ -415,15 +452,17 @@ header .sub-header ul li.active a
     }
 
 /*-------------------------------*/
-/*       Dashboard Queues        */
+/*       Dashboard widgets       */
 /*-------------------------------*/
 
 .widget-area
 {
     min-height: 100px;
+    padding-bottom: 50px;
 }
     .widget-area .ui-sortable-placeholder { border: 3px dashed #cccccc; visibility: visible !important; height: 100px !important; }
 	.widget-area .ui-sortable-placeholder * { visibility: hidden; }
+
 .widget
 {
     position: relative;
@@ -486,17 +525,21 @@ header .sub-header ul li.active a
     {
         background-color: #276da3;
     }
+    .widget ul li span strong
+    {
+        color: #004174;
+    }
 
  /*-- Widget Specific --*/
 
-        /*-- Queues --*/
-        
+        /*-- Queues --*/    
+
         .widget ul li .q_add_tkt,
         .widget ul li ul li .td_edit
         {
             display: none;
             position: absolute;
-            right: -98px;
+            right: -100px;
             top: 0px;
             font-size: 12px;
             border-radius: 4px;
@@ -542,8 +585,15 @@ header .sub-header ul li.active a
 
         .widget.todos li.td_list
         {
-            padding: 0 0 20px 0;
+            padding: 0 0 10px 0;
+            margin: 0 0 20px 0;
+            border-bottom: 1px solid #e5e5e5;
         }
+            .widget.todos li.td_list:last-child
+            {
+                margin: 0;
+                border-bottom: none;
+            }
             .widget.todos li.td_list a.todo_label
             {
                 font-weight: bold;
@@ -575,6 +625,20 @@ header .sub-header ul li.active a
         {
             padding-left: 55px;
         }
+            .widget.recent_tks ul li.w_tkt_single p span.mes_label
+            {
+                font-size: 12px;
+                line-height: 16px;
+                padding: 0 7px;
+                background: #eee;
+                border: 1px solid transparent;
+                color: #666;
+                white-space: nowrap;
+                display: inline-block;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+            }
        .widget.recent_tks ul li.w_tkt_single img.r_tk_avatar
         {
             width: 48px;
@@ -592,6 +656,18 @@ header .sub-header ul li.active a
     {
         margin-right: 95px;
     }
+
+    ul.counters {
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+    ul.counters li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
 }
 
 @media (max-width: 768px)
