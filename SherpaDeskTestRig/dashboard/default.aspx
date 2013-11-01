@@ -355,7 +355,10 @@ Nicolas<small><span class="label label-primary">Account Name</span> <span class=
         
             $(".widget-area").sortable({
                 connectWith: ".widget-area",
-                handle: ".w_head"
+                handle: ".w_head",
+                stop: function (event, ui) {
+                    console.log(ui.position);
+                }
             });
         });
         
