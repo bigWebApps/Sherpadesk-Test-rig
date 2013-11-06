@@ -27,15 +27,6 @@ section
     margin-bottom: 50px;
 }
 
-.right
-{
-    float: right;
-}
-
-.left
-{
-    float: left;
-}
 
 /*-------------------------------*/
 /* Temp - remove for production  */
@@ -141,10 +132,7 @@ header .header {
                 background: #ffffff url(../img/search_lense.png) 3px center no-repeat;
                 background-size: 22px 22px;
             }
-    header .header .header-right ul
-    {
-        float: right;
-    }
+    
     header .header .header-right ul li
     {
         padding: 0 10px;
@@ -152,19 +140,14 @@ header .header {
         header .header .header-right li.profile img
         {
             padding: 2px;
+            margin-right: 5px;
             background-color: #ffffff;
-            margin: 11px 10px 0 0;
-            float: left;
         }
         
+        header .header .header-right li.add-item a.add-drop, 
         header .header .header-right li.profile a.profile-name
         {
-            font-weight: bold;
-            line-height: 52px;
-            padding-left: 40px;
-        }
-        header .header .header-right ul li:first-child
-        {
+            font-size: 18px;
         }
 
         /*------------- Bootstrap Overrides --------------*/
@@ -176,26 +159,47 @@ header .header {
                 background: #276da3;
             }
 
-header .header ul.nav li.dropdown ul.dropdown-menu
+/* Blue dropdown Menu */
+
+ul.dropdown-menu.bluedrop
 {
-    background-color:#3399ff;
+    background-color:#058dc7;
 }
-    header .header ul.nav li.dropdown ul.dropdown-menu li
+    ul.dropdown-menu.bluedrop::after
     {
-        border: none;
-        border: none;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 50px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #058dc7 transparent;
+    }
+    ul.dropdown-menu.bluedrop li
+    {
         width: 100%;
+        padding: 0 !important;
         box-sizing: border-box;
         text-align: center;
+        font-size: 16px;
         height: auto;
         display: block;
         vertical-align: middle;
+        border-bottom: 1px solid #09A0E1;
     }
-    header .header ul.nav li.dropdown ul.dropdown-menu li a
+        ul.dropdown-menu.bluedrop li:last-child
+        {
+            border-bottom: none;
+        }
+    ul.dropdown-menu.bluedrop li a
     {
-        padding: 10px;
+        padding: 10px 0;
+        color:#ffffff;
     }
-        header .header ul.nav li.dropdown ul.dropdown-menu li a:hover
+        ul.dropdown-menu.bluedrop li a:hover
         {
             background: #09a0e1;
         }
@@ -478,12 +482,10 @@ ul.counters {
     .widget h4.w_head
     {
         padding: 8px;
-        color: #004174;
-        text-shadow: 1px 1px 1px #ffffff;
+        color: #ffffff;
         margin: 0 -10px 10px;
-        background-color: #F1F1F1;
+        background-color: #2E7DBA;
         border-bottom: 1px solid #E5E5E5;
-        border-top: 1px solid #ffffff;
 
     }
     .widget h4.w_head:hover
@@ -494,12 +496,11 @@ ul.counters {
     {
         position: absolute;
         right: 15px;
-        top: 6px;
+        top: 5px;
     }
         .widget div.w_add a
         {
-            color: #004174;
-            text-shadow: 1px 1px 1px #ffffff;
+            color: #ffffff;
             font-size: 12px;
         }
             .widget div.w_add a:hover
@@ -530,7 +531,14 @@ ul.counters {
         color: #004174;
     }
 
- /*-- Widget Specific --*/
+    .widget.no-items p
+    {
+        text-align: center;
+        color: #bababa;
+    }
+ 
+    
+    /*-- Widget Specific --*/
 
         /*-- Queues --*/    
 
@@ -644,6 +652,19 @@ ul.counters {
             width: 48px;
             border-radius: 24px;
         }
+       /* Chart */
+       #flotTip {
+          padding: 5px 6px;
+          background-color: #000;
+          z-index: 100;
+          color: #fff;
+          font-size: 14px;
+          opacity: .7;
+          filter: alpha(opacity=70);
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
 
 
 /*-------------------------------*/
@@ -672,6 +693,11 @@ ul.counters {
 
 @media (max-width: 768px)
 {
+    .btn
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
     p.mobile-nav
     {
         display: block;

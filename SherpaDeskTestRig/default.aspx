@@ -95,104 +95,21 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="row">
-        <div class="col-sm-12">
-            <a name="tables"></a>
-            <h2>Table Grids</h2>
-              <table class="table">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div> 
-    </div>
-</section>  
+ 
 <section>     
     <a name="components"></a>
     <h2>Components</h2>
     <div class="row"> 
             <div class="col-sm-2">
-                <h3>Progress Bars</h3>
-                <p>Standard</p>
-                <div class="progress">
-                  <div class="bar" style="width: 60%;"></div>
-                </div>
-                <br />
-                <p>Stacked</p>
-                <div class="progress">
-                  <div class="bar bar-success" style="width: 35%;"></div>
-                  <div class="bar bar-warning" style="width: 20%;"></div>
-                  <div class="bar bar-danger" style="width: 10%;"></div>
-                </div>
-            </div> 
-            <div class="col-sm-2">
-                <h3>Badges</h3>
-                <p>Default <span class="badge">1</span></p>
-                <p>Success <span class="badge badge-success">2</span></p>
-                <p>Warning <span class="badge badge-warning">4</span></p>
-                <p>Important <span class="badge badge-important">6</span></p>
-                <p>Info <span class="badge badge-info">8</span></p>
-                <p>Black <span class="badge badge-inverse">10</span></p>
+                <h3>Labels</h3>
+                <p>Default <span class="label label-default pull-right">1</span></p>
+                <p>Success <span class="label label-success pull-right">2</span></p>
+                <p>Warning <span class="label label-warning pull-right">4</span></p>
+                <p>Primary <span class="label label-primary pull-right">6</span></p>
+                <p>Info <span class="label label-info pull-right">8</span></p>
+                <p>Danger <span class="label label-danger pull-right">10</span></p>
             </div>
-            <div class="col-sm-2">
-                <h3>Modal Box Sample</h3>
-                <!-- Button to trigger modal -->
-                <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
- 
-                <!-- Modal -->
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="myModalLabel">Standard Modal</h3>
-                  </div>
-                  <div class="modal-body">
-                    <p>Modal body text or message</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                    <button class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-
-            </div>
+           
             <div class="col-sm-6">
                 <h3>Icons</h3>
                 <button class="btn btn-primary"><span class="glyphicon glyphicon-glass icon-white"></span> sample</button> 

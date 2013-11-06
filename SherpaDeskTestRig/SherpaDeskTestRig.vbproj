@@ -95,6 +95,9 @@
     <Content Include="img\yeti-avatar.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\chart\jquery.flot.min.js" />
+    <Content Include="js\chart\jquery.flot.resize.js" />
+    <Content Include="js\chart\jquery.flot.tooltip.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.pep.min.js" />
     <Content Include="js\main.js" />

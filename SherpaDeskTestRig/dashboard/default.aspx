@@ -5,26 +5,23 @@
     <section>
         <div class="row">
             <div class="col-sm-6">
-                <div class="add-item ticket-action left">
-                    <ul>
-                        <li class="btn btn-lg btn-primary top-action-item">
-                            <a class="action" href="#"><span class="glyphicon glyphicon-time"></span> Add Time </a>
-                                <ul>
-                                    <li>
-                                        <a href="#" id="AddTimeLink">Add Time</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" id="DayReportLink">End of Day</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" id="TimesheetLink">Timesheet&nbsp;</a>
-                                    </li>
-                                </ul>
-                        </li>
-                    </ul>
+                <div class="dropdown">
+                  <button class="btn btn-lg btn-primary top-action-item dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-time"></span> Add Time <span class="caret"></span> </button>
+                  <ul class="dropdown-menu bluedrop" role="menu">
+                    <li role="presentation">
+                        <a href="#" id="AddTimeLink">Add Time</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="DayReportLink">End of Day</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="TimesheetLink">Timesheet&nbsp;</a>
+                    </li>
+                  </ul>
                 </div>
+
             </div>
-            <div class="col-sm-6"><button class="btn btn-lg btn-success right" type="button">Create New Ticket</button></div>
+            <div class="col-sm-6"><button class="btn btn-lg btn-success pull-right" type="button">Create New Ticket</button></div>
         </div>
     </section>
 
@@ -35,11 +32,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h3 class="left">October 28, 2013 - Monday</h3>
+                        <h3 class="pull-left">October 28, 2013 - Monday</h3>
                         <a class="time-calendar" href="#"><span class="glyphicon glyphicon-calendar"></span></a>
                     </div>
                     <div class="col-sm-6">
-                        <a class="time-close right">Close <span>X</span></a>
+                        <a class="time-close pull-right">Close <span>X</span></a>
                     </div>
                 </div> <!-- End Date top row --> 
                 
@@ -138,11 +135,11 @@
                 </div> <!-- End Row with fields --> 
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="#" class="btn btn-sm btn-info left" type="button"><span class="glyphicon glyphicon-time"></span> Start/Stop Timer</a>
+                        <a href="#" class="btn btn-sm btn-info pull-left" type="button"><span class="glyphicon glyphicon-time"></span> Start/Stop Timer</a>
                     </div><!-- End Row with bottom left button--> 
                     <div class="col-sm-6">
                         <p>
-                            <a href="#" class="btn btn-lg btn-success right" type="button">Log My Time</a>
+                            <a href="#" class="btn btn-lg btn-success pull-right" type="button">Log My Time</a>
                         </p>
                     </div><!-- End Row with bottom right button--> 
                 </div> <!-- End Bottom Row with buttons -->            
@@ -166,7 +163,7 @@
                     <li role="presentation">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" data-counter="open_ticket" checked="checked"> Open Ticket
+                                <input type="checkbox" data-counter="open_tickets" checked="checked"> Open Ticket
                             </label>
                         </div>
                     </li>
@@ -198,12 +195,18 @@
                             </label>
                         </div>
                     </li>
+                    <li role="presentation">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" data-counter="recent_ticket_activity" checked="checked"> Ticket Activity
+                            </label>
+                        </div>
+                    </li>
                   </ul>
                 </div>
             </div>
         </div>
-        <div class="row">
-            
+        <div class="row">            
             <div class="col-sm-12">            
                 <ul class="counters">
                     <li class="new_message">
@@ -258,6 +261,22 @@
             </div>
         </div>
     </section><!-- End Dashboard Elements Section --> 
+
+    <section>
+        <ul>
+            <li class="recent_ticket_activity">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="widget">
+                            <h4 class="w_head">Recent Ticket Activity</h4>
+                            <div id="flot-chart" style="height:250px"></div>
+                        </div>                
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </section><!-- End Chart Section --> 
 
     <section>        
         <div class="row">
@@ -325,6 +344,14 @@
             </div><!-- End Widget-Area --> 
 
             <div class="col-md-3 widget-area">
+                <div class="widget todos no-items">
+                    <div class="w_add">
+                        <a data-toggle="modal" href="#addTodoList"><span class="glyphicon glyphicon-plus"></span> Add ToDo List</a>
+                    </div>
+                    <a href="#allToDos"><h4 class="w_head">ToDo Lists</h4></a>
+                    <p>All your tasks are complete :-)<br /><a href="#">Create Some New Ones.</a></p>
+                </div>
+
                 <div class="widget todos">
                     <div class="w_add">
                         <a data-toggle="modal" href="#addTodoList"><span class="glyphicon glyphicon-plus"></span> Add ToDo List</a>
@@ -337,17 +364,17 @@
                             <ul>
                                 <li>
                                     <input type="checkbox" class="pull-left" value="">
-                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. Aye nah then ne'ermind. <span class="label label-warning">Oct 30, 2013</span></p>
+                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. Aye nah then ne'ermind. <span class="label label-default">Oct 30, 2013</span></p>
                                     <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
                                 </li>
                                 <li>
                                     <input type="checkbox" class="pull-left" value="">
-                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. <span class="label label-info">Oct 31, 2013</span></p>
+                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin' nora. <span class="label label-default">Oct 31, 2013</span></p>
                                     <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
                                 </li>
                                 <li>
                                     <input type="checkbox" class="pull-left" value="">
-                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin'. <span class="label label-info">Nov 1, 2013</span></p>
+                                    <p>Wacken thi sen up. Ah'll learn thi ah'll gi' thi summat to rooer abaht chuffin' nora chuffin'. <span class="label label-default">Nov 1, 2013</span></p>
                                     <div class="td_edit"><a href="#"><span class="glyphicon glyphicon-edit"></span> Edit ToDo</a></div>
                                 </li>
                             </ul>
@@ -396,6 +423,11 @@
             </div><!-- End Widget-Area --> 
             
             <div class="col-md-3 widget-area">
+                <div class="widget recent_tks no-items">
+                    <h4 class="w_head">Messages</h4>
+                    <p>Looks like you've read all these :-)</p>
+                </div>
+
                 <div class="widget recent_tks">
                     <h4 class="w_head">Messages</h4>
                     <ul>
@@ -422,7 +454,7 @@
                         </li>
                         <li class="w_tkt_single">
                             <img class="r_tk_avatar pull-left" src="../img/yeti-avatar.jpg" />
-                            <p><strong><span class="label label-default"># 1325</span> Getting an error when changing the resolution </strong><small><span class="label label-default">2 days ago</span></small><br /><strong>[response]</strong> See snag. <small><span class="mes_label">SherpaDesk | Benjamin Pfohl</span> </small></p>
+                            <p><strong><span class="label label-default"># 1325</span> Getting an error when changing the resolution </strong><small><span class="label label-default">2 days ago</span></small><br /><strong>[Closed]</strong> This is resolved. <small><span class="mes_label">SherpaDesk | Benjamin Pfohl</span> </small></p>
                             <p class="w_tkt_s_attach">
                             </p>
                         </li>
@@ -444,6 +476,9 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="AddJavascriptHere" runat="server">
     <script src="../js/ui/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../js/chart/jquery.flot.min.js"></script>
+    <script src="../js/chart/jquery.flot.tooltip.min.js"></script>
+    <script src="../js/chart/jquery.flot.resize.js"></script>
     <script>
         $(function () {
             $('a.time-close').on("click", function () {
@@ -482,6 +517,62 @@
                 };
             });
 
+            //Setup new chart          
+            var plot = $.plot($("#flot-chart"),
+                [{
+                    data: [[1, 12], [2, 7], [3, 5], [4, 3], [5, 8], [6, 9], [7, 11], [8, 13], [9, 15], [10, 10]],
+                    label: "Tickets Opened"
+                },
+                {
+                    data: [[1, 8], [2, 8], [3, 7], [4, 4], [5, 3], [6, 7], [7, 8], [8, 11], [9, 18], [10, 14]],
+                    label: "Tickets Closed"
+                }],
+                {
+                    series: {
+                        lines: {
+                            show: true,
+                            lineWidth: 1,
+                            fill: true,
+                            fillColor: {
+                                colors: [{
+                                    opacity: 0.2
+                                }, {
+                                    opacity: 0.1
+                                }]
+                            }
+                        },
+                        points: {
+                            radius: 5,
+                            show: true
+                        },
+                        shadowSize: 4
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: true,
+                        tickColor: "#f0f0f0",
+                        borderWidth: 0
+                    },
+                    colors: ["#004174", "#4cae4c"],
+                    xaxis: {
+                        ticks: 31,
+                        tickDecimals: 0
+                    },
+                    yaxis: {
+                        ticks: 10,
+                        tickDecimals: 0
+                    },
+                    tooltip: true,
+                    tooltipOpts: {
+                        content: "%y.4 %s on %x.1 ",
+                        defaultTheme: false,
+                        shifts: {
+                            x: 0,
+                            y: -35
+                        }
+                    }
+                });
+            $(window).resize(function () { this.plot });
         });
         
     </script>
