@@ -666,6 +666,72 @@ ul.counters {
           border-radius: 4px;
         }
 
+/*-------------------------------*/
+/*           Onboarding          */
+/*-------------------------------*/
+
+.onboard h1,
+.onboard h2,
+.onboard p
+{
+    text-align: center;
+}
+.onboard h1
+{
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+.onboard h2
+{
+    font-size: 24px;
+    margin: 0 0 25px;
+}
+
+.onboard p small
+{
+    color: #929292;
+}
+
+.onboard .obemail
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+    .onboard .obemail input.onemail
+    {
+        font-size: 18px;
+        width: 100%;
+        min-height: 50px;
+        margin: 0;
+        padding: 10px 8px;
+        border: 2px solid #CCCCCC;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: 0 none !important;
+    }
+    .onboard .obemail .ob-outer
+    {
+        width: 100%;
+        padding-right: 150px;
+    }
+    .onboard .obemail .btn
+    {
+        float: right;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-width: 2px;
+    }
+
+
+
 
 /*-------------------------------*/
 /*         Mobile view           */

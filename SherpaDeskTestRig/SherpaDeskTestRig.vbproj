@@ -104,6 +104,7 @@
     <Content Include="js\ui\jquery-1.9.1.js" />
     <Content Include="js\ui\jquery-ui-1.10.3.custom.js" />
     <Content Include="js\ui\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="onboarding\default.aspx" />
     <Content Include="portal\article.aspx" />
     <Content Include="portal\css\bootstrap.css" />
     <Content Include="portal\css\portal.css" />
@@ -161,6 +162,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="onboarding\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onboarding\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="portal\article.aspx.designer.vb">
       <DependentUpon>article.aspx</DependentUpon>
