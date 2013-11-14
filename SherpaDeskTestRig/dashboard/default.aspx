@@ -479,6 +479,7 @@
     <script src="../js/chart/jquery.flot.min.js"></script>
     <script src="../js/chart/jquery.flot.tooltip.min.js"></script>
     <script src="../js/chart/jquery.flot.resize.js"></script>
+    <script src="../js/chart/jquery.flot.time.js"></script>
     <script>
         $(function () {
             $('a.time-close').on("click", function () {
@@ -500,15 +501,15 @@
             });
 
             //console log widget info
-            $( ".widget-area" ).on("sortupdate",function( event, ui ) {
-                var sorted = $( this ).sortable( "widget");
-                console.log(sorted);            
+            $(".widget-area").on("sortupdate", function (event, ui) {
+                var sorted = $(this).sortable("widget");
+                console.log(sorted);
             });
 
             //Show hide counter items
-            
+
             $('.checkbox input').on('change', function () {
-                var counter = $(this).data('counter');                      
+                var counter = $(this).data('counter');
 
                 if ($(this).is(':checked') || $('li.' + counter).is(':hidden')) {
                     $('li.' + counter).show();
@@ -520,17 +521,30 @@
             //Setup new chart          
             var plot = $.plot($("#flot-chart"),
                 [{
-                    data: [[1, 12], [2, 7], [3, 5], [4, 3], [5, 8], [6, 9], [7, 11], [8, 13], [9, 15], [10, 10]],
-                    label: "Tickets Opened"
+                    data: [[(1381622400 * 1000), 12], [(1381708800 * 1000), 7], [(1381795200 * 1000), 5], [(1381881600 * 1000), 3], [(1381968000 * 1000), 8], [(1382054400 * 1000), 9], [(1382140800 * 1000), 11], [(1382227200 * 1000), 13], [(1382313600 * 1000), 15], [(1382400000 * 1000), 10]],
+                    label: "Avg Opened",
+                    lines: { show: true },
+                    points: { show: true }
                 },
                 {
-                    data: [[1, 8], [2, 8], [3, 7], [4, 4], [5, 3], [6, 7], [7, 8], [8, 11], [9, 18], [10, 14]],
-                    label: "Tickets Closed"
+                    data: [[(1381622400 * 1000), 8], [(1381708800 * 1000), 8], [(1381795200 * 1000), 7], [(1381881600 * 1000), 4], [(1381968000 * 1000), 3], [(1382054400 * 1000), 7], [(1382140800 * 1000), 8], [(1382227200 * 1000), 11], [(1382313600 * 1000), 18], [(1382400000 * 1000), 14]],
+                    label: "Avg Closed",
+                    lines: { show: true },
+                    points: { show: true }
+                },
+                {
+                    data: [[(1381622400 * 1000), 3], [(1381708800 * 1000), 2], [(1381795200 * 1000), 6], [(1381881600 * 1000), 4], [(1381968000 * 1000), 1], [(1382054400 * 1000), 3], [(1382140800 * 1000), 1], [(1382227200 * 1000), 0], [(1382313600 * 1000), 3], [(1382400000 * 1000), 1]],
+                    label: "My Opened",
+                    bars: { show: true, align: "right" }
+                },
+                {
+                    data: [[(1381622400 * 1000), 4], [(1381708800 * 1000), 2], [(1381795200 * 1000), 2], [(1381881600 * 1000), 5], [(1381968000 * 1000), 2], [(1382054400 * 1000), 5], [(1382140800 * 1000), 4], [(1382227200 * 1000), 4], [(1382313600 * 1000), 2], [(1382400000 * 1000), 4]],
+                    label: "My Closed",
+                    bars: { show: true, align: "left" }
                 }],
                 {
                     series: {
                         lines: {
-                            show: true,
                             lineWidth: 1,
                             fill: true,
                             fillColor: {
@@ -541,22 +555,35 @@
                                 }]
                             }
                         },
+                        bars: {
+                            barWidth: 12.8 * 24 * 60 * 1000,
+                            fill: true,
+                            fillColor: {
+                                colors: [{
+                                    opacity: 0.8
+                                }, {
+                                    opacity: 0.8
+                                }]
+                            }
+                        },
                         points: {
-                            radius: 5,
-                            show: true
+                            radius: 5
                         },
                         shadowSize: 4
                     },
                     grid: {
                         hoverable: true,
+                        autoHighlight: true,
                         clickable: true,
                         tickColor: "#f0f0f0",
                         borderWidth: 0
                     },
-                    colors: ["#004174", "#4cae4c"],
+                    colors: ["#004174", "#4cae4c", "#f0ad4e", "#ff9c00"],
                     xaxis: {
-                        ticks: 31,
-                        tickDecimals: 0
+                        ticks: 20,
+                        mode: "time",
+                        timeformat: "%b %d",
+                        minTickSize: [1, "day"]
                     },
                     yaxis: {
                         ticks: 10,
@@ -568,12 +595,12 @@
                         defaultTheme: false,
                         shifts: {
                             x: 0,
-                            y: -35
+                            y: -45
                         }
                     }
                 });
             $(window).resize(function () { this.plot });
         });
-        
+
     </script>
 </asp:Content>
