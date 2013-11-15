@@ -154,7 +154,7 @@ header .header {
         .nav > li > a:hover, .nav > li > a:focus {
             background-color: transparent;
             }
-        header .header ul.nav li.dropdown:hover
+        header .header ul.nav li:hover
             {
                 background: #276da3;
             }

@@ -40,6 +40,7 @@
                                             <li><a href="#">Time</a></li>
                                         </ul>
                                     </li>
+                                    <li class="add-item"><a class="add-drop" href="../appstore"><span class="glyphicon glyphicon-cloud-download"></span> App Store</a></li>
                                     <li class="dropdown profile">
                                         <a href="#" class="profile-name dropdown-toggle" data-toggle="dropdown"><img src="https://www.gravatar.com/avatar/caa7da1b2393aabf76936dc24b7a2ff2?s=24" /> Support Guy <span class="caret"></span> </a>
                                         <ul class="dropdown-menu bluedrop">

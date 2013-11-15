@@ -81,6 +81,9 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appstore\css\appstore.css" />
+    <Content Include="appstore\default.aspx" />
+    <Content Include="appstore\img\account1.png" />
     <Content Include="css\bootstrap-responsive-old.css" />
     <Content Include="css\bootstrap-old.css" />
     <Content Include="css\bootstrap.css" />
@@ -91,6 +94,7 @@
     <Content Include="img\header\help.png" />
     <Content Include="img\header\mountain.png" />
     <Content Include="img\header\plus_white.png" />
+    <Content Include="img\placeholder.png" />
     <Content Include="img\search_lense.png" />
     <Content Include="img\yeti-avatar.jpg" />
     <Content Include="js\bootstrap.js" />
@@ -130,6 +134,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="appstore\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appstore\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="dashboard\default.aspx.designer.vb">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
@@ -241,7 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="accounts\" />
-    <Folder Include="appstore\css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
