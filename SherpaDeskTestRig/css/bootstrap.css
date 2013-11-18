@@ -1998,6 +1998,7 @@ textarea.input-lg {
 
 .btn {
   display: inline-block;
+  background-color: #E6E6E6;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;

@@ -3,10 +3,10 @@
     <link href="css/appstore.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="container appstore">          
+<div class="appstore">          
         <section>        
             <div class="row">                
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="app-major">
                         <div class="ribbon-wrapper-green"><div class="ribbon-green">Installed</div></div>
 
@@ -34,7 +34,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="app-major">                      
 
                         <!-- Carousel -->    
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4">
                     <div class="app-major">
 
                         <!-- Carousel -->    
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.00</h3>
                         <p class="app-includes"><span class="label label-info">Included FREE. Gratis. Nada. Zilch.</span></p>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>
@@ -124,7 +124,7 @@
                 <div class="col-md-3">
                     <div class="app-minor">
                         <div class="ribbon-wrapper-green"><div class="ribbon-green">Installed</div></div>
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.00</h3>
                         <p class="app-includes"><span class="label label-info">Included FREE. Gratis. Nada. Zilch.</span></p>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="app-minor">
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>
@@ -171,7 +171,7 @@
                 <div class="col-md-3">
                     <div class="app-minor">
                         <div class="ribbon-wrapper-green"><div class="ribbon-green">Installed</div></div>
-                        <img src="../img/placeholder.png" />
+                        <img src="img/placeholder.png" />
                         <h3>Accounts</h3>
                         <h3 class="app-price">$0.20 <small>/account/mo</small></h3>
                         <p class="app-includes"><span class="label label-info">Includes 3 Accounts for FREE.</span></p>

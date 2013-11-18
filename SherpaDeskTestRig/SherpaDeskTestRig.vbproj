@@ -84,6 +84,7 @@
     <Content Include="appstore\css\appstore.css" />
     <Content Include="appstore\default.aspx" />
     <Content Include="appstore\img\account1.png" />
+    <Content Include="appstore\img\placeholder.png" />
     <Content Include="css\bootstrap-responsive-old.css" />
     <Content Include="css\bootstrap-old.css" />
     <Content Include="css\bootstrap.css" />
@@ -94,6 +95,7 @@
     <Content Include="img\header\help.png" />
     <Content Include="img\header\mountain.png" />
     <Content Include="img\header\plus_white.png" />
+    <Content Include="img\move-head.png" />
     <Content Include="img\placeholder.png" />
     <Content Include="img\search_lense.png" />
     <Content Include="img\yeti-avatar.jpg" />

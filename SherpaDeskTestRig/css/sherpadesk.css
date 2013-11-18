@@ -481,7 +481,8 @@ ul.counters {
     }
     .widget h4.w_head
     {
-        padding: 8px;
+        padding: 8px 8px 8px 20px;
+        background: #2E7DBA url(../img/move-head.png) 2px 1px no-repeat;
         color: #ffffff;
         margin: 0 -10px 10px;
         background-color: #2E7DBA;
