@@ -14,6 +14,13 @@
         width: 50%;
     }
 
+    .appstore h2.feature-title
+    {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
 .app-major,
 .app-minor
 {
@@ -28,7 +35,8 @@
         margin-bottom: 5px;
     }
 .app-major img,
-.app-minor img
+.app-minor img,
+.app-small img
 {
     background-color: #f3f3f3;
     padding: 5px;
@@ -60,11 +68,34 @@
     {
         text-align: center;
     }
+    .app-small button.btn.btn-lg,
     .app-minor button.btn.btn-lg
     {
         width: 100%;
         margin-top: 10px;
     }
+
+.app-small
+{
+    padding: 8px;
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #e1e1e1;
+}
+    .app-small p,
+    .app-small h3
+    {
+        margin: 0;
+    }
+    .app-small p
+    {
+        line-height: 1.2em;
+    }
+        .app-small p.learnmore-sm
+        {
+            margin-top: 10px;
+            font-size: 14px;
+        }
 
 
 .carousel
@@ -97,4 +128,17 @@
   left: -5px;
   top: 15px;
   width: 120px;  
+}
+.app-small .ribbon-wrapper-green {
+  left: 15px;
+}
+
+.app-small .ribbon-green {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  right: 28px; 
+  left: auto;
+  letter-spacing: 1px;
 }

@@ -84,6 +84,8 @@
     <Content Include="appstore\css\appstore.css" />
     <Content Include="appstore\default.aspx" />
     <Content Include="appstore\img\account1.png" />
+    <Content Include="appstore\img\creation-category.png" />
+    <Content Include="appstore\img\custom-fields.png" />
     <Content Include="appstore\img\placeholder.png" />
     <Content Include="css\bootstrap-responsive-old.css" />
     <Content Include="css\bootstrap-old.css" />
