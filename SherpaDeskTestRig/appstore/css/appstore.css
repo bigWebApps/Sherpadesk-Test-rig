@@ -29,10 +29,11 @@
     background-color: #f8f8f8;
     border: 1px solid #e1e1e1;
 }
+    .app-major img,
     .app-minor img
     {
         max-width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 .app-major img,
 .app-minor img,
@@ -97,6 +98,10 @@
             font-size: 14px;
         }
 
+.app-desc
+{
+    height: 90px;
+}
 
 .carousel
 {
