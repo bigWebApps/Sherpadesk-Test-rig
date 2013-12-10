@@ -214,6 +214,10 @@ p.mobile-nav
     padding: 0;
 }
 
+li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
 
 /*-------------------------------*/
 /*         Sub-Header            */
@@ -345,7 +349,7 @@ ul.counters {
             background-color: #F1F1F1;
             padding: 10px;
             border-radius: 6px;
-            border: 1px solid #E5E5E5;
+            border: 1px solid #e5e5e5;
         }
             ul.counters li div.counter a
             {
@@ -355,7 +359,11 @@ ul.counters {
         {
             margin: 0;
             font-size: 72px;
+			color:#333;
         }
+		span.cnt_label {
+			color: #39f;
+		}
 
 /*-------------------------------*/
 /*     Dashboard Time Log        */
