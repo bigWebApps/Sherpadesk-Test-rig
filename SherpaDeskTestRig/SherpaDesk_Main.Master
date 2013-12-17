@@ -17,65 +17,65 @@
         <header>
   	        <div class="header">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 header-left">
-		                    <ul>
-			                    <li class="header-mtn"><a href="#"><img src="../img/header/mountain.png" /></a></li>
-                                <li class="header-search"><input type="text" class="form-control" placeholder="Search Tickets"></li>
-		                    </ul>
-                        </div>
+                    <div class="col-sm-6 header-left">
+		                <ul>
+			                <li class="header-mtn"><a href="#"><img src="../img/header/mountain.png" /></a></li>
+                            <li class="header-search"><input type="text" class="form-control" placeholder="Search Tickets"></li>
+		                </ul>
+                    </div>
     	            
-                        <div class="col-sm-6 header-right">
-		                    <ul class="nav pull-right">
-                                <li class="dropdown add-item">
-                                    <a href="#" class="add-drop dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu bluedrop">
-                                            <li><a href="#">Ticket</a></li>
-                                            <li><a href="#">Account</a></li>
-                                            <li><a href="#">User</a></li>
-                                            <li><a href="#">Invoice</a></li>
-                                            <li><a href="#">Bill</a></li>
-                                            <li><a href="#">Asset</a></li>
-                                            <li><a href="#">Project</a></li>
-                                            <li><a href="#">Time</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="add-item"><a class="add-drop" href="../appstore"><span class="glyphicon glyphicon-cloud-download"></span> App Store</a></li>
-                                    <li class="dropdown profile">
-                                        <a href="#" class="profile-name dropdown-toggle" data-toggle="dropdown"><img src="https://www.gravatar.com/avatar/caa7da1b2393aabf76936dc24b7a2ff2?s=24" /> Support Guy <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu bluedrop">
-                                            <li><a href="#">Configuration</a></li>
-                                            <li><a href="#">Support</a></li>
-                                            <li><a href="#">My Profile</a></li>
-                                            <li><a href="#">Log Out</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a title="Page Help" onclick="window.open(&quot;/Support/Help.aspx?s=%2fhome%2fticket%2fViewTicket.aspx%3fid%3d13711&quot;, '_blank', 'location=0,menubar=0,resizable=1,scrollbars=1,status=0,titlebar=0,toolbar=0,top=' + Mp_GetPopupPositionY(event) + ',left=' + Mp_GetPopupPositionX(680)  + ',width=680,height=725');return false;">
-                                        <img src="../img/header/help.png" /></a>
-                                    </li>
-		                    </ul>
-                        </div>
-    	            </div>
+                    <div class="col-sm-6 header-right">
+		                <ul class="nav pull-right">
+                            <li class="dropdown add-item">
+                                <a href="#" class="add-drop dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add <span class="caret"></span> </a>
+                                    <ul class="dropdown-menu bluedrop">
+                                        <li><a href="#">Ticket</a></li>
+                                        <li><a href="#">Account</a></li>
+                                        <li><a href="#">User</a></li>
+                                        <li><a href="#">Invoice</a></li>
+                                        <li><a href="#">Bill</a></li>
+                                        <li><a href="#">Asset</a></li>
+                                        <li><a href="#">Project</a></li>
+                                        <li><a href="#">Time</a></li>
+                                    </ul>
+                                </li>
+                                <li class="add-item"><a class="add-drop" href="../appstore"><span class="glyphicon glyphicon-cloud-download"></span> App Store</a></li>
+                                <li class="dropdown profile">
+                                    <a href="#" class="profile-name dropdown-toggle" data-toggle="dropdown"><img src="https://www.gravatar.com/avatar/caa7da1b2393aabf76936dc24b7a2ff2?s=24" /> Support Guy <span class="caret"></span> </a>
+                                    <ul class="dropdown-menu bluedrop">
+                                        <li><a href="#">Support</a></li>
+                                        <li><a title="Page Help" onclick="window.open(&quot;/Support/Help.aspx?s=%2fhome%2fticket%2fViewTicket.aspx%3fid%3d13711&quot;, '_blank', 'location=0,menubar=0,resizable=1,scrollbars=1,status=0,titlebar=0,toolbar=0,top=' + Mp_GetPopupPositionY(event) + ',left=' + Mp_GetPopupPositionX(680)  + ',width=680,height=725');return false;">
+                                            Page Help</a>
+                                        </li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">Log Out</a></li>
+                                    </ul>
+                                </li>
+                                <li><a title="Config" href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+		                </ul>
+                    </div>
                 </div>
   	        </div>
             <div class="sub-header">
-                <div class="container">                    
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p class="mobile-nav">Menu</p>
-                            <ul>
-                                <li><a href="../#cssgrid">CSS Layout Grids</a></li>
-                                <li><a href="../#buttons">Buttons</a></li>
-                                <li><a href="../#components">Components</a></li>
-                                <li><a href="../onboarding/default.aspx">Get Started</a></li>
-                                <li><a href="../dashboard/default.aspx">Dashboard</a></li>
-                                <li><a href="../portal/portal.aspx">Portal</a></li> 
-                                <li><a href="../#">Accounts</a></li>                             
-                            </ul>
-                        </div>
+                <div class="container">
+                    <div class="col-sm-12">
+                        <p class="mobile-nav">Menu</p>
+                        <ul>
+                            <li class="active"><a href="../">Home</a></li>
+                            <li><a href="../#cssgrid">CSS Layout Grids</a></li>
+                            <li><a href="../#buttons">Buttons</a></li>
+                            <li><a href="../#components">Components</a></li>
+                            <li><a href="../onboarding/default.aspx">Get Started</a></li>
+                            <li><a href="../dashboard/default.aspx">Dashboard</a></li>
+                            <li><a href="../portal/portal.aspx">Portal</a></li> 
+                            <li><a href="../#">Accounts</a></li>                             
+                        </ul>
                     </div>
                 </div>
             </div>
+            <asp:ContentPlaceHolder ID="submenu" runat="server">
+        
+            </asp:ContentPlaceHolder>
         </header>
 
         <div class="container">

@@ -1,6 +1,22 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/SherpaDesk_Main.Master" CodeBehind="default.aspx.vb" Inherits="SherpaDeskTestRig._default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+<asp:Content ID="Content5" ContentPlaceHolderID="submenu" runat="server">
+    <div class="sub-header sub">
+        <div class="container">
+            <div class="col-sm-12">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>                            
+                </ul>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <section>
     <div class="row">

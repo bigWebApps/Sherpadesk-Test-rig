@@ -129,8 +129,26 @@ header .header {
             header .header .header-left ul li.header-search input
             {
                 padding-left: 30px;
-                background: #ffffff url(../img/search_lense.png) 3px center no-repeat;
+                background: #276da3 url(../img/top_search_lense.png) 3px center no-repeat;
                 background-size: 22px 22px;
+                border-color: #276da3;
+                color: #ffffff;
+
+            }
+            header .header .header-left ul li.header-search input::-webkit-input-placeholder {
+               color: #98b9d3;
+            }
+
+            header .header .header-left ul li.header-search input:-moz-placeholder { /* Firefox 18- */
+               color: #98b9d3;  
+            }
+
+            header .header .header-left ul li.header-search input::-moz-placeholder {  /* Firefox 19+ */
+               color: #98b9d3;  
+            }
+
+            header .header .header-left ul li.header-search input:-ms-input-placeholder {  
+               color: #98b9d3;  
             }
     
     header .header .header-right ul li
@@ -233,6 +251,12 @@ header .sub-header {
 	padding: 0;
 	}
 
+header .sub-header.sub {
+	background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: 1px solid #C2C2C2;
+	}
+
 header .sub-header ul li
     {
         display: inline-block;
@@ -251,12 +275,25 @@ header .sub-header ul li a
         border: 1px solid transparent;
         line-height:35px;
     }
-header .sub-header ul li a:hover,
-header .sub-header ul li.active a
+header .sub-header ul li a:hover
     {
         background-color: #e5e5e5;
         color: #222222;
         border: 1px solid #dcdcdc;
+    }
+header .sub-header.sub ul li a:hover
+    {
+        background-color: #F0F0F0;
+        color: #222222;
+        border: 1px solid #dcdcdc;
+    }
+
+header .sub-header ul li.active a,
+header .sub-header.sub ul li.active a
+    {
+        background-color: #39f;
+        color: #fff;
+        border: 1px solid #39f;
     }
 
 /*-------------------------------*/

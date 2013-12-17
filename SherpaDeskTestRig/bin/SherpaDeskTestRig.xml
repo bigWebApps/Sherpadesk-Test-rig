@@ -87,6 +87,14 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:SherpaDeskTestRig.SherpaDesk_Main.submenu">
+	<summary>
+submenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:SherpaDeskTestRig.SherpaDesk_Main.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
