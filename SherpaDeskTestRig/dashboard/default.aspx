@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section>
+    <section class="dash-top-section">
         <div class="row">
             <div class="col-sm-6">
                 <div class="dropdown">
@@ -27,8 +27,8 @@
 
 
     <!-- Time Logger Control -->
-    <section>
-        <div class="row home-time-log">
+    <section class="home-time-log">
+        <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -263,18 +263,37 @@
     </section><!-- End Dashboard Elements Section --> 
 
     <section>
-        <ul>
-            <li class="recent_ticket_activity">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="widget">
-                            <h4 class="w_head">Recent Ticket Activity</h4>
-                            <div id="flot-chart" style="height:250px"></div>
-                        </div>                
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li class="recent_ticket_activity">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="widget">
+                                    <h4 class="w_head">Closed Tickets</h4>
+                                    <div id="flot-chart2" style="height:250px"></div>
+                                </div>                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="recent_ticket_activity">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="widget">
+                                    <h4 class="w_head">Open Tickets</h4>
+                                    <div id="flot-chart" style="height:250px"></div>
+                                </div>                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+        
         
     </section><!-- End Chart Section --> 
 
@@ -483,14 +502,14 @@
     <script>
         $(function () {
             $('a.time-close').on("click", function () {
-                if ($("div.home-time-log").is(":visible")) {
-                    $("div.home-time-log").fadeOut();
+                if ($("section.home-time-log").is(":visible")) {
+                    $("section.home-time-log").fadeOut();
                 }
             });
 
             $('a#AddTimeLink').on("click", function () {
-                if ($("div.home-time-log").is(":hidden")) {
-                    $("div.home-time-log").fadeIn();
+                if ($("section.home-time-log").is(":hidden")) {
+                    $("section.home-time-log").fadeIn();
                 }
             });
 
@@ -528,7 +547,7 @@
                 },
                 {
                     data: [[(1381622400 * 1000), 8], [(1381708800 * 1000), 8], [(1381795200 * 1000), 7], [(1381881600 * 1000), 4], [(1381968000 * 1000), 3], [(1382054400 * 1000), 7], [(1382140800 * 1000), 8], [(1382227200 * 1000), 11], [(1382313600 * 1000), 18], [(1382400000 * 1000), 14]],
-                    label: "Avg Closed",
+                    label: "My Opened",
                     lines: { show: true },
                     points: { show: true }
                 }
@@ -589,7 +608,80 @@
                         }
                     }
                 });
+
+            var plot2 = $.plot($("#flot-chart2"),
+                [{
+                    data: [[(1381622400 * 1000), 12], [(1381708800 * 1000), 7], [(1381795200 * 1000), 5], [(1381881600 * 1000), 3], [(1381968000 * 1000), 8], [(1382054400 * 1000), 9], [(1382140800 * 1000), 11], [(1382227200 * 1000), 13], [(1382313600 * 1000), 15], [(1382400000 * 1000), 10]],
+                    label: "Avg Closed",
+                    lines: { show: true, fill: true },
+                    points: { show: true }
+                },
+                {
+                    data: [[(1381622400 * 1000), 8], [(1381708800 * 1000), 8], [(1381795200 * 1000), 7], [(1381881600 * 1000), 4], [(1381968000 * 1000), 3], [(1382054400 * 1000), 7], [(1382140800 * 1000), 8], [(1382227200 * 1000), 11], [(1382313600 * 1000), 18], [(1382400000 * 1000), 14]],
+                    label: "My Closed",
+                    lines: { show: true },
+                    points: { show: true }
+                }
+                ],
+                {
+                    series: {
+                        lines: {
+                            lineWidth: 1,
+                            fillColor: {
+                                colors: [{
+                                    opacity: 0.2
+                                }, {
+                                    opacity: 0.1
+                                }]
+                            }
+                        },
+                        bars: {
+                            barWidth: 12.8 * 24 * 60 * 1000,
+                            fill: true,
+                            fillColor: {
+                                colors: [{
+                                    opacity: 0.8
+                                }, {
+                                    opacity: 0.8
+                                }]
+                            }
+                        },
+                        points: {
+                            radius: 5
+                        },
+                        shadowSize: 4
+                    },
+                    grid: {
+                        hoverable: true,
+                        autoHighlight: true,
+                        clickable: true,
+                        tickColor: "#f0f0f0",
+                        borderWidth: 0
+                    },
+                    colors: ["#ff9900", "#004174", "#f0ad4e", "#ff9c00"],
+                    xaxis: {
+                        ticks: 20,
+                        mode: "time",
+                        timeformat: "%b %d",
+                        minTickSize: [1, "day"]
+                    },
+                    yaxis: {
+                        ticks: 10,
+                        tickDecimals: 0
+                    },
+                    tooltip: true,
+                    tooltipOpts: {
+                        content: "%y.4 %s on %x.1 ",
+                        defaultTheme: false,
+                        shifts: {
+                            x: 0,
+                            y: -45
+                        }
+                    }
+                });
+
             $(window).resize(function () { this.plot });
+            $(window).resize(function () { this.plot2 });
         });
 
     </script>

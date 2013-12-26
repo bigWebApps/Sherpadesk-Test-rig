@@ -300,6 +300,11 @@ header .sub-header.sub ul li.active a
 /*          Dashboard            */
 /*-------------------------------*/
 
+section.dash-top-section
+{
+    margin-bottom:10px;
+}
+
 .add-item .top-action-item {
 }
 .add-item ul li a {
@@ -526,7 +531,7 @@ ul.counters {
     }
     .widget h4.w_head
     {
-        padding: 8px 8px 8px 20px;
+        padding: 8px;
         background-color: #2E7DBA;
         color: #ffffff;
         margin: 0 -10px 10px;
@@ -537,7 +542,6 @@ ul.counters {
     .widget h4.w_head:hover
     {
         cursor: move;
-        background: #2E7DBA url(../img/move-head.png) 2px 1px no-repeat;
     }
     .widget div.w_add
     {
