@@ -386,6 +386,10 @@ ul.counters {
         padding: 5px 13px 0 3px;
         margin-top: 10px;
     }
+        ul.counters li:last-child
+        {
+            padding-right: 0;
+        }
         ul.counters li div.counter
         {
             background-color: #F1F1F1;
