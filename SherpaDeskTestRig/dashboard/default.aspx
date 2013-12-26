@@ -299,7 +299,7 @@
 
     <section>        
         <div class="row">
-            <div class="col-md-3 widget-area">
+            <div class="col-md-3 widget-area" id="col1">
                 <div class="widget queues">
                     <div class="w_add">
                         <a data-toggle="modal" href="#addQueue"><span class="glyphicon glyphicon-plus"></span> Add Queue</a>
@@ -362,7 +362,7 @@
 
             </div><!-- End Widget-Area --> 
 
-            <div class="col-md-3 widget-area">
+            <div class="col-md-3 widget-area" id="col2">
                 <div class="widget todos no-items">
                     <div class="w_add">
                         <a data-toggle="modal" href="#addTodoList"><span class="glyphicon glyphicon-plus"></span> Add ToDo List</a>
@@ -441,7 +441,7 @@
 
             </div><!-- End Widget-Area --> 
             
-            <div class="col-md-3 widget-area">
+            <div class="col-md-3 widget-area" id="col3">
                 <div class="widget recent_tks no-items">
                     <h4 class="w_head">Messages</h4>
                     <p>Looks like you've read all these :-)</p>
@@ -481,7 +481,7 @@
                 </div><!-- End Widget --> 
 
             </div><!-- End Widget-Area -->
-            <div class="col-md-3 widget-area">
+            <div class="col-md-3 widget-area" id="col4">
 
             </div> <!-- End Widget-Area -->
         </div>
@@ -513,17 +513,47 @@
                 }
             });
 
-            //Make .widget-area (s) sortable
-            $(".widget-area").sortable({
-                connectWith: ".widget-area",
-                handle: ".w_head"
-            });
+            
 
-            //console log widget info
-            $(".widget-area").on("sortupdate", function (event, ui) {
-                var sorted = $(this).sortable("widget");
-                console.log(sorted);
-            });
+           // function that writes the list order to a cookie 
+            function saveOrder() { 
+                $(".widget-area").each(function(index, value){ 
+                    var colid = value.id; 
+                    var colName = "column-" + colid; 
+                    // Get the order for this column. 
+                    var order = $('#' + colid).sortable("toArray");
+                    localStorage.setItem(colName, order);
+                }); 
+            } 
+
+            // function that restores the list order from a cookie 
+            function restoreOrder() { 
+                $(".widget-area").each(function(index, value) { 
+                    var colid = value.id; 
+                    var colName = "column-" + colid 
+                    var column = 'localStorage.' + colName;
+                    if ( column == null || column == "" ) { return; } 
+                    var IDs = column.split(","); 
+                    for (var i = 0, n = IDs.length; i < n; i++ ) { 
+                        var toks = IDs[i].split(":"); 
+                        if ( toks.length != 2 ) { 
+                            continue; 
+                        } 
+                        var portletID = toks[0];
+                    } 
+                }); 
+            } 
+           
+                //Make .widget-area (s) sortable
+                $(".widget-area").sortable({
+                    connectWith: ".widget-area",
+                    handle: ".w_head",
+                    stop: function() { saveOrder(); } 
+                });                
+
+                restoreOrder(); 
+
+               
 
             //Show hide counter items
 
